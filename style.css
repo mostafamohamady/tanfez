@@ -23,8 +23,8 @@
 
 .behind-logo {
   background-color: blue;
-  height: 400px;
-  width: 400px;
+  height: 40vh;
+  width: 40vh;
   position: absolute;
   z-index: 100;
 }
@@ -80,5 +80,5 @@
 
 .start-btn-container {
   position: absolute;
-  top: 80%;
+  bottom: 20%;
 }
