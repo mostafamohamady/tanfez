@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.login-page {
+  height: 101vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.behind-logo {
+  background-color: blue;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  z-index: 100;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  background-color: #0f0;
+  position: absolute;
+  z-index: 106;
+}
+.logo1 {
+  background-color: yellow;
+  height: 0px;
+  width: 200px;
+  position: absolute;
+  bottom: -100px;
+  z-index: 103;
+  display: none;
+}
+.logo2 {
+  background-color: rgb(43, 144, 226);
+  height: 0px;
+  width: 180px;
+  position: absolute;
+  bottom: -80px;
+  z-index: 104;
+  display: none;
+}
+.logo3 {
+  background-color: rgb(226, 125, 43);
+  height: 0px;
+  width: 160px;
+  position: absolute;
+  bottom: -60px;
+  z-index: 105;
+  display: none;
+}
+
+.tanfiz-title {
+  display: none;
+  position: absolute;
+  top: 80%;
+  z-index: 106;
+}
+
+.login-form {
+  display: none;
+  position: absolute;
+  top: 90%;
+  z-index: 107;
+}
+
+.start-btn-container {
+  position: absolute;
+  top: 80%;
+}
