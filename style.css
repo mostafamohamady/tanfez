@@ -1,7 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(176deg, rgba(213,221,232,1) 0%, rgba(250,252,255,1) 100%);
+
+
+}
+
+
+
 * {
   padding: 0;
   margin: 0;
 }
+
+
+
+
+/* login page - part one of animation setup */
+
+
 
 .login-page {
   height: 101vh;
@@ -22,46 +42,65 @@
 }
 
 .behind-logo {
-  background-color: blue;
+
   height: 40vh;
-  width: 40vh;
+  width: 37vh;
   position: absolute;
   z-index: 100;
+  background-image:url("imges/Group\ 107850.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
 }
 
 .logo {
   height: 50px;
   width: 50px;
-  background-color: #0f0;
   position: absolute;
   z-index: 106;
+  background-image: url("imges/flagkuwait.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .logo1 {
-  background-color: yellow;
-  height: 0px;
+ 
+  height: 200px;
   width: 200px;
   position: absolute;
   bottom: -100px;
   z-index: 103;
   display: none;
+  background-image: url(imges/logopath1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0);
 }
 .logo2 {
-  background-color: rgb(43, 144, 226);
-  height: 0px;
-  width: 180px;
+
+  height: 150px;
+  width: 155px;
   position: absolute;
   bottom: -80px;
   z-index: 104;
   display: none;
+  background-image: url("imges/logopath2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0);
+
 }
 .logo3 {
-  background-color: rgb(226, 125, 43);
-  height: 0px;
-  width: 160px;
+
+  height: 100px;
+  width: 100px;
   position: absolute;
-  bottom: -60px;
+  bottom: -40px;
   z-index: 105;
   display: none;
+  background-image: url("imges/logopath3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0);
 }
 
 .tanfiz-title {
@@ -81,4 +120,24 @@
 .start-btn-container {
   position: absolute;
   bottom: 20%;
+}
+
+.leftanimation{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 25%;
+ 
+  background-image: url("imges/Tanfez_Shape.svg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  
+  z-index: 100;
+  left:-25%;
+}
+
+.login-container{
+  overflow: hidden  ;
+  position: relative;
 }
