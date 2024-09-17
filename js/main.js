@@ -75,6 +75,7 @@ startBtn.addEventListener("click", function () {
   });
 });
 
+/* show hide password*/
 let showPassBtn = document.querySelector("#showPasswprd");
 let inputPassword = document.querySelector("#inputPass");
 let showPassIcon = document.querySelector("#showPassIcon");
@@ -90,6 +91,5 @@ showPassBtn.addEventListener("click", function () {
     showPassIcon.style.display = "block";
 
     hidePassIcon.style.display = "none";
-
   }
 });
