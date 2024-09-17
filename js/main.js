@@ -80,5 +80,20 @@ startBtn.addEventListener("click", function () {
 });
 
 
+let showPassBtn = document.querySelector("#showPasswprd");
+let inputPassword = document.querySelector("#inputPass");
+let showPassIcon = document.querySelector("#showPassIcon");
 
+showPassBtn.addEventListener("click", function () {
+  if (inputPassword.type === "password") {
+    inputPassword.type = "text";
+    showPassIcon.setAttribute("src", "../imges/showpass.svg");
 
+    
+  } else {
+    inputPassword.type = "password";
+    showPassIcon.setAttribute("src", "../imges/hidepass.svg");
+
+    
+  }
+});
