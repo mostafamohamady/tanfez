@@ -1,12 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
 :root {
-  --main-btn-border-color:#B39D74;
-  --main-btn-background-color:#B39D74;
-  --main-btn-fcolor:#B39D74;
-  --main-btnstart-fcolor:#B39D74;
-  --main-btnprimary-fcolor:#FFFFFF;
-  --footer-fcolor:#3F6272;
-  --primary-fcolor:#3F6272;
+  --main-btn-border-color: #b39d74;
+  --main-btn-background-color: #b39d74;
+  --main-btn-fcolor: #b39d74;
+  --main-btnstart-fcolor: #b39d74;
+  --main-btnprimary-fcolor: #ffffff;
+  --footer-fcolor: #3f6272;
+  --primary-fcolor: #3f6272;
+  --input-border: #d2dae3;
+  --input-box-shadow: #6c5b3e0d;
+  --input-placeholder-color: #b8c3c7;
+  --textprimary-color: #3f6272;
+  --textsecndary-color: #b39d74;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -16,11 +26,16 @@ body {
   color: var(--primary-fcolor);
 }
 
-* {
-  padding: 0;
-  margin: 0;
+/*font color*/
+.text-primary {
+  color: var(--textprimary-color) !important;
 }
 
+.text-secondary {
+  color: var(--textsecndary-color) !important;
+}
+
+/* //font color*/
 /* login page - part one of animation setup */
 .login-page {
   height: 101vh;
@@ -110,6 +125,7 @@ body {
   position: absolute;
   top: 90%;
   z-index: 107;
+  width: 450px;
 }
 
 .start-btn-container {
@@ -135,7 +151,7 @@ body {
   position: relative;
 }
 
-/* sart btn */
+/* btns */
 .btn {
   border: 2px solid;
   padding: 10px 10px;
@@ -154,6 +170,21 @@ body {
   color: var(--main-btnstart-fcolor);
 }
 
+.btn-primary {
+  background: var(--main-btn-background-color);
+  color: var(--main-btnprimary-fcolor);
+  border: unset;
+}
+.btn-primary:hover {
+  background: var(--main-btn-background-color);
+  color: var(--main-btnprimary-fcolor);
+  border: unset;
+}
+
+.btn-primary--enter {
+  min-width: 160px;
+}
+
 .login-footer {
   position: absolute;
   left: 0;
@@ -164,4 +195,78 @@ body {
 .login-footer .footer-container {
   color: var(--footer-fcolor);
   font-size: 0.7rem;
+}
+
+.login-page {
+  /* minstry title*/
+  /* login form*/
+}
+.login-page h3 {
+  font-weight: 300;
+}
+.login-page .text-container {
+  position: relative;
+  text-align: center;
+}
+.login-page .text-container span {
+  z-index: 2;
+  position: relative;
+  background: transparent;
+  padding: 10px;
+}
+.login-page .text-container span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: var(--primary-fcolor);
+  bottom: 50%;
+  width: 100%;
+  z-index: 1;
+  left: 100%;
+  width: 65px;
+}
+.login-page .text-container span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: var(--primary-fcolor);
+  bottom: 50%;
+  width: 100%;
+  z-index: 1;
+  right: 100%;
+  width: 65px;
+}
+.login-page .login-form .form-control {
+  border-radius: 41px;
+  padding: 20px 49px;
+  font-size: 1.25em;
+  border: 1px solid var(--input-border);
+  box-shadow: 0px 7px 9px var(--input-box-shadow);
+}
+.login-page .login-form .form-control::-moz-placeholder {
+  color: var(--input-placeholder-color);
+}
+.login-page .login-form .form-control::placeholder {
+  color: var(--input-placeholder-color);
+}
+.login-page .login-form .form-control-uname {
+  background-image: url("../imges/user.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+}
+.login-page .login-form .form-control-password {
+  background-image: url("../imges/pass.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+}
+
+@media (max-width: 576px) {
+  .login-form {
+    width: 80%;
+  }
+  .login-footer {
+    position: unset;
+  }
 }/*# sourceMappingURL=style.css.map */

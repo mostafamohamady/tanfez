@@ -1,41 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap");
 
-:root{
-
-  --main-btn-border-color:#B39D74;
-  --main-btn-background-color:#B39D74;
-  --main-btn-fcolor:#B39D74;
-  --main-btnstart-fcolor:#B39D74;
-  --main-btnprimary-fcolor:#FFFFFF;
-  --footer-fcolor:#3F6272;
-  --primary-fcolor:#3F6272;
-
+:root {
+  --main-btn-border-color: #b39d74;
+  --main-btn-background-color: #b39d74;
+  --main-btn-fcolor: #b39d74;
+  --main-btnstart-fcolor: #b39d74;
+  --main-btnprimary-fcolor: #ffffff;
+  --footer-fcolor: #3f6272;
+  --primary-fcolor: #3f6272;
+  --input-border: #d2dae3;
+  --input-box-shadow: #6c5b3e0d;
+  --input-placeholder-color: #b8c3c7;
+  --textprimary-color: #3f6272;
+  --textsecndary-color: #b39d74;
 }
-
-
-
-body {
-  font-family: 'Readex Pro', sans-serif;
-  font-size: 1rem;
-  background: linear-gradient(176deg, rgba(213,221,232,1) 0%, rgba(250,252,255,1) 100%);
-  color: var(--primary-fcolor);
-
-
-}
-
-
 
 * {
   padding: 0;
   margin: 0;
 }
 
+body {
+  font-family: "Readex Pro", sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(
+    176deg,
+    rgba(213, 221, 232, 1) 0%,
+    rgba(250, 252, 255, 1) 100%
+  );
+  color: var(--primary-fcolor);
+}
+/*font color*/
 
-
+.text-primary {
+  color: var(--textprimary-color) !important;
+}
+.text-secondary {
+  color: var(--textsecndary-color) !important;
+}
+/* //font color*/
 
 /* login page - part one of animation setup */
-
-
 
 .login-page {
   height: 101vh;
@@ -56,15 +61,13 @@ body {
 }
 
 .behind-logo {
-
   height: 40vh;
   width: 37vh;
   position: absolute;
   z-index: 100;
-  background-image:url("../imges/Group\ 107850.svg");
+  background-image: url("../imges/Group\ 107850.svg");
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
 .logo {
@@ -77,7 +80,6 @@ body {
   background-repeat: no-repeat;
 }
 .logo1 {
- 
   height: 200px;
   width: 200px;
   position: absolute;
@@ -90,7 +92,6 @@ body {
   transform: scale(0);
 }
 .logo2 {
-
   height: 150px;
   width: 155px;
   position: absolute;
@@ -101,10 +102,8 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   transform: scale(0);
-
 }
 .logo3 {
-
   height: 100px;
   width: 100px;
   position: absolute;
@@ -129,6 +128,7 @@ body {
   position: absolute;
   top: 90%;
   z-index: 107;
+  width: 450px;
 }
 
 .start-btn-container {
@@ -136,69 +136,163 @@ body {
   bottom: 20%;
 }
 
-.leftanimation{
+.leftanimation {
   position: absolute;
   top: 0;
   bottom: 0;
   height: 100%;
   width: 25%;
- 
+
   background-image: url("../imges/Tanfez_Shape.svg");
-  background-size: cover; 
+  background-size: cover;
   background-repeat: no-repeat;
-  
+
   z-index: 100;
-  left:-25%;
+  left: -25%;
 }
 
-.login-container{
-  overflow: hidden  ;
+.login-container {
+  overflow: hidden;
   position: relative;
 }
 
+/* btns */
 
-
-/* sart btn */
-
-
-.btn{
+.btn {
   border: 2px solid;
   padding: 10px 10px;
-  border-radius: 45px; 
+  border-radius: 45px;
   font-size: 1.5rem;
-  
 }
-.startBtn{
+.startBtn {
   border-color: var(--main-btn-border-color);
   background-color: transparent;
   color: var(--main-btnstart-fcolor);
   min-width: 160px;
-
 }
-.startBtn:hover{
+.startBtn:hover {
   color: var(--main-btnstart-fcolor);
-
 }
 
-.login-footer{
+.btn-primary {
+  background: var(--main-btn-background-color);
+  color: var(--main-btnprimary-fcolor);
+  border: unset;
+  &:hover {
+    background: var(--main-btn-background-color);
+    color: var(--main-btnprimary-fcolor);
+    border: unset;
+  }
+}
+
+.btn-primary--enter {
+  min-width: 160px;
+}
+
+.login-footer {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-
-
 }
 
-.login-footer .footer-container{
+.login-footer .footer-container {
   color: var(--footer-fcolor);
   font-size: 0.7rem;
 }
 
+.login-page {
+  /* minstry title*/
+  h3 {
+    font-weight: 300;
+  }
+  .text-container {
+    position: relative;
+    text-align: center;
+    span {
+      z-index: 2;
+      position: relative;
+      background: transparent;
+      padding: 10px;
 
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        background: var(--primary-fcolor);
+        bottom: 50%;
+        width: 100%;
+        z-index: 1;
+        left: 100%;
+        width: 65px;
+      }
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 1px;
+        background: var(--primary-fcolor);
+        bottom: 50%;
+        width: 100%;
+        z-index: 1;
+        right: 100%;
+        width: 65px;
+      }
+    }
+  }
 
+  /* login form*/
+  .login-form {
+    .reg-text {
+    }
+    .form-control {
+      border-radius: 41px;
+      padding: 20px 49px;
+      font-size: 1.25em;
+      border: 1px solid var(--input-border);
+      box-shadow: 0px 7px 9px var(--input-box-shadow);
 
+      &::placeholder {
+        color: var(--input-placeholder-color);
+      }
+    }
 
+    .form-control-uname {
+      background-image: url("../imges/user.svg");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 15px) center;
+    }
+    .form-control-password {
+      background-image: url("../imges/pass.svg");
+      background-repeat: no-repeat;
+      background-position: calc(100% - 15px) center;
+    }
+  }
+}
 
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) {
+  .login-form {
+    width: 80%;
+  }
+  .login-footer {
+    position: unset;
+  }
+}
 
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+}
 
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+}
