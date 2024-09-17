@@ -87,7 +87,7 @@ let showPassIcon = document.querySelector("#showPassIcon");
 showPassBtn.addEventListener("click", function () {
   if (inputPassword.type === "password") {
     inputPassword.type = "text";
-    showPassIcon.setAttribute("src", "../imges/showpass.svg");
+    showPassIcon.setAttribute("src", "../imges/showpassword.svg");
 
     
   } else {
