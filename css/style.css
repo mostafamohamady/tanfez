@@ -270,6 +270,9 @@ body {
   transform: translateY(-50%);
   z-index: 100;
 }
+.login-page .login-form .show-password #hidePassIcon {
+  display: none;
+}
 
 @media (max-width: 576px) {
   .login-form {

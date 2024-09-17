@@ -1,7 +1,6 @@
 let startBtn = document.querySelector("#startBtn");
 
 startBtn.addEventListener("click", function () {
-
   startBtn.style = "display:none";
 
   gsap.to(".behind-logo", {
@@ -14,41 +13,38 @@ startBtn.addEventListener("click", function () {
   gsap.to(".logo", { y: "72px", duration: 0.5, delay: 1 });
   gsap.to(".logo1", {
     display: "block",
-  
-    
+
     duration: 0.5,
     delay: 1.5,
-    scale: 1
+    scale: 1,
   });
   gsap.to(".logo2", {
     display: "block",
-    
+
     duration: 0.5,
     delay: 2,
-    scale: 1
+    scale: 1,
   });
   gsap.to(".logo3", {
     display: "block",
-    
+
     duration: 0.5,
     delay: 2.5,
-    scale: 1
+    scale: 1,
   });
   gsap.to(".leftanimation", {
-    x:"25vw",
-    
+    x: "25vw",
+
     duration: 0.8,
     delay: 3,
-    
   });
-
 
   gsap.to(".logo-container", {
     y: "-10vh",
     scale: 0.8,
     duration: 0.8,
     delay: 3,
-    scale: 1
+    scale: 1,
   });
   gsap.to(".tanfiz-title", {
     display: "block",
@@ -79,21 +75,21 @@ startBtn.addEventListener("click", function () {
   });
 });
 
-
 let showPassBtn = document.querySelector("#showPasswprd");
 let inputPassword = document.querySelector("#inputPass");
 let showPassIcon = document.querySelector("#showPassIcon");
+let hidePassIcon = document.querySelector("#hidePassIcon");
 
 showPassBtn.addEventListener("click", function () {
   if (inputPassword.type === "password") {
     inputPassword.type = "text";
-    showPassIcon.setAttribute("src", "../imges/showpassword.svg");
-
-    
+    showPassIcon.style.display = "none";
+    hidePassIcon.style.display = "block";
   } else {
     inputPassword.type = "password";
-    showPassIcon.setAttribute("src", "../imges/hidepass.svg");
+    showPassIcon.style.display = "block";
 
-    
+    hidePassIcon.style.display = "none";
+
   }
 });
