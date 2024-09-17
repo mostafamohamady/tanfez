@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap');
+
+:root{
+
+  --main-btn-border-color:#B39D74;
+  --main-btn-background-color:#B39D74;
+  --main-btn-fcolor:#B39D74;
+  --main-btnstart-fcolor:#B39D74;
+  --main-btnprimary-fcolor:#FFFFFF;
+  --footer-fcolor:#3F6272;
+  --primary-fcolor:#3F6272;
+
+}
+
+
+
+body {
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(176deg, rgba(213,221,232,1) 0%, rgba(250,252,255,1) 100%);
+  color: var(--primary-fcolor);
+
+
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+/* login page - part one of animation setup */
+
+
+
+.login-page {
+  height: 101vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo-container {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.behind-logo {
+
+  height: 40vh;
+  width: 37vh;
+  position: absolute;
+  z-index: 100;
+  background-image:url("../imges/Group\ 107850.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  z-index: 106;
+  background-image: url("../imges/flagkuwait.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.logo1 {
+ 
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  bottom: -100px;
+  z-index: 103;
+  display: none;
+  background-image: url("../imges/logopath1.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0);
+}
+.logo2 {
+
+  height: 150px;
+  width: 155px;
+  position: absolute;
+  bottom: -80px;
+  z-index: 104;
+  display: none;
+  background-image: url("../imges/logopath2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0);
+
+}
+.logo3 {
+
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: -40px;
+  z-index: 105;
+  display: none;
+  background-image: url("../imges/logopath3.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: scale(0);
+}
+
+.tanfiz-title {
+  display: none;
+  position: absolute;
+  top: 80%;
+  z-index: 106;
+}
+
+.login-form {
+  display: none;
+  position: absolute;
+  top: 90%;
+  z-index: 107;
+}
+
+.start-btn-container {
+  position: absolute;
+  bottom: 20%;
+}
+
+.leftanimation{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 25%;
+ 
+  background-image: url("../imges/Tanfez_Shape.svg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  
+  z-index: 100;
+  left:-25%;
+}
+
+.login-container{
+  overflow: hidden  ;
+  position: relative;
+}
+
+
+
+/* sart btn */
+
+
+.btn{
+  border: 2px solid;
+  padding: 10px 10px;
+  border-radius: 45px; 
+  font-size: 1.5rem;
+  
+}
+.startBtn{
+  border-color: var(--main-btn-border-color);
+  background-color: transparent;
+  color: var(--main-btnstart-fcolor);
+  min-width: 160px;
+
+}
+.startBtn:hover{
+  color: var(--main-btnstart-fcolor);
+
+}
+
+.login-footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+
+}
+
+.login-footer .footer-container{
+  color: var(--footer-fcolor);
+  font-size: 0.7rem;
+}
+
+
+
+
+
+
+
+
+
