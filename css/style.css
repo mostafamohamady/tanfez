@@ -27,6 +27,12 @@ body {
 }
 
 /*font color*/
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
 .text-primary {
   color: var(--textprimary-color) !important;
 }
@@ -185,6 +191,22 @@ body {
   min-width: 160px;
 }
 
+.form-control {
+  border-radius: 40px;
+  padding: 20px 49px;
+  font-size: 1.25em;
+  border: 1px solid var(--input-border);
+  box-shadow: 0px 7px 9px var(--input-box-shadow);
+  position: relative;
+}
+.form-control::-moz-placeholder {
+  color: var(--input-placeholder-color);
+}
+.form-control::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+/* login foter*/
 .login-footer {
   position: absolute;
   left: 0;
@@ -197,6 +219,14 @@ body {
   font-size: 0.7rem;
 }
 
+/* login foter*/
+/*inner footer*/
+.login-footer--inner .footer-container {
+  color: var(--footer-fcolor);
+  font-size: 0.7rem;
+}
+
+/*inner footer*/
 .login-page {
   /* minstry title*/
   /* login form*/
@@ -275,6 +305,178 @@ body {
   display: none;
 }
 
+.inner-page {
+  min-height: 100vh;
+  background-image: url("../imges/Tanfez_Shape.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.header--inner {
+  padding-top: 55px;
+}
+.header--inner .logocontainer span {
+  z-index: 2;
+  position: relative;
+  background: transparent;
+  padding: 10px;
+  font-size: 12px;
+}
+.header--inner .logocontainer span::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: var(--primary-fcolor);
+  bottom: 50%;
+  z-index: 1;
+  right: 100%;
+  width: 35px;
+}
+.header--inner .logocontainer span::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1px;
+  background: var(--primary-fcolor);
+  bottom: 50%;
+  z-index: 1;
+  left: 100%;
+  width: 35px;
+}
+.header--inner .notificatio-profile {
+  display: flex;
+  justify-content: end;
+}
+.header--inner .notificatio-profile .notifiction,
+.header--inner .notificatio-profile .profile {
+  margin-inline-start: 45px;
+}
+.header--inner .notificatio-profile .profile {
+  border-radius: 50%;
+  padding: 2px;
+  background-color: #fff;
+}
+.header--inner .notificatio-profile .profile image {
+  width: 49px;
+}
+.header--inner .notificatio-profile .notifiction {
+  margin-top: 10px;
+}
+.header--inner .notificatio-profile .notifiction button {
+  border: none;
+  position: relative;
+  background: transparent;
+}
+.header--inner .notificatio-profile .notifiction button .noti-count {
+  background-color: #cb3131;
+  border-radius: 50%;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  bottom: -5px;
+  line-height: 1.123;
+  text-align: center;
+  padding: 3px;
+  right: -15px;
+}
+
+.main-sec {
+  margin-top: 20px;
+  /*aside menu */
+  /* search componnet*/
+}
+.main-sec .page-menu {
+  border-radius: 15px;
+  background: #ebf0f5;
+  padding: 25px;
+  box-shadow: 0px 6px 10px 0px rgb(217, 222, 227);
+}
+.main-sec .page-menu li.item a {
+  display: flex;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  min-height: 90px;
+  align-items: center;
+  color: #577c8e;
+  position: relative;
+}
+.main-sec .page-menu li.item:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.main-sec .page-menu li.item.active a {
+  background-color: #577c8d;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.main-sec .page-menu li.item.active a::after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  height: 2px;
+  background: var(--main-btn-border-color);
+  z-index: 1;
+  bottom: -2px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.main-sec .page-menu li.item .icon {
+  border-radius: 30px;
+  margin-inline-end: 10px;
+}
+.main-sec .page-menu li.item .list-title {
+  text-align: center;
+}
+.main-sec .page-menu li.item .list-title span {
+  font-size: 0.8rem;
+}
+.main-sec .page-menu li.item .count {
+  font-size: 1.8rem;
+  font-weight: 400;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.main-sec .page-menu li.item a {
+  text-decoration: none;
+}
+.main-sec .seaechcontainer {
+  padding: 60px 40px;
+  background-color: rgba(255, 255, 255, 0.5294117647);
+  border-radius: 40px;
+}
+.main-sec .seaechcontainer h2 {
+  font-weight: 300;
+}
+.main-sec .seaechcontainer .text-gradient {
+  background: #B9A066;
+  background: linear-gradient(to right, #B9A066 0%, #75A0D6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-sec .seaechcontainer p {
+  font-size: 1rem;
+  margin-top: 20px;
+  font-weight: 200;
+}
+.main-sec .seaechcontainer .form-control-search {
+  background-image: url("../imges/Search_Icon.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 15px) center;
+}
+
+/******************************
+
+
+media
+
+*************
+
+*******************/
 @media (max-width: 576px) {
   .login-form {
     width: 80%;

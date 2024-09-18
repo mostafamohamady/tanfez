@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.706" height="33.688" viewBox="0 0 33.706 33.688">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_38337" data-name="Rectangle 38337" width="33.706" height="33.688" fill="#b39d74" stroke="#b39d74" stroke-linecap="square" stroke-width="0.3"/>
+    </clipPath>
+  </defs>
+  <g id="Tanfez_Icon" clip-path="url(#clip-path)">
+    <path id="Path_67616" data-name="Path 67616" d="M51.044,22.368,62.489,10.925l1.362,1.536,1.52-1.524L54.451,0,52.984,1.487,54.447,2.8,43.069,14.182l-1.3-1.5-1.551,1.549L51.2,25.209l1.38-1.49-1.538-1.351M44.9,15.778,56.018,4.657l4.717,4.721L49.616,20.5l-4.72-4.72" transform="translate(-40.217 -0.001)" fill="#b39d74" stroke="#b39d74" stroke-linecap="square" stroke-width="0.3"/>
+    <path id="Path_67617" data-name="Path 67617" d="M2.68,87.25.225,89.621l9.511,9.51,6.214-6.214-9.5-9.5L4.192,85.755,1.449,83.12,0,84.578,2.68,87.25M9.758,96.2,3.3,89.735,6.545,86.5l6.443,6.444L9.758,96.2" transform="translate(17.757 -65.442)" fill="#b39d74" stroke="#b39d74" stroke-linecap="square" stroke-width="0.3"/>
+  </g>
+</svg>
