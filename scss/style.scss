@@ -199,18 +199,7 @@ ul {
   min-width: 160px;
 }
 
-.input-button-container {
-  position: relative;
 
-  .form-control-inbtn {
-    position: absolute;
-    top: 50%;
-    left: 8px;
-    transform: translateY(-50%);
-    min-width: 160px;
-    border-radius: 40px !important;
-  }
-}
 
 .form-control {
   border-radius: 40px !important;
@@ -225,12 +214,27 @@ ul {
   }
 }
 
+.input-button-container {
+  position: relative;
+
+  .form-control-inbtn {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    min-width: 160px;
+    border-radius: 40px !important;
+    z-index: 100;
+  }
+}
+
 /* login foter*/
 .login-footer {
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
+ 
 }
 
 .login-footer .footer-container {
