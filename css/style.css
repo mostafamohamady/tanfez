@@ -466,9 +466,10 @@ ul {
   text-decoration: none;
 }
 .main-sec .seaechcontainer {
-  padding: 60px 40px;
+  padding: 70px 40px;
   background-color: rgba(255, 255, 255, 0.5294117647);
   border-radius: 40px;
+  box-shadow: 0px 6px 10px 0px rgb(217, 222, 227);
 }
 .main-sec .seaechcontainer h2 {
   font-weight: 300;
