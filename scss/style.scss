@@ -188,10 +188,28 @@ ul {
     color: var(--main-btnprimary-fcolor);
     border: unset;
   }
+  &:focus {
+    background: var(--main-btn-background-color);
+    color: var(--main-btnprimary-fcolor);
+    border: unset;
+  }
 }
 
 .btn-primary--enter {
   min-width: 160px;
+}
+
+.input-button-container {
+  position: relative;
+
+  .form-control-inbtn {
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    transform: translateY(-50%);
+    min-width: 160px;
+    border-radius: 40px !important;
+  }
 }
 
 .form-control {
@@ -206,10 +224,6 @@ ul {
     color: var(--input-placeholder-color);
   }
 }
-
-
-
-
 
 /* login foter*/
 .login-footer {
@@ -277,7 +291,6 @@ ul {
 
   /* login form*/
   .login-form {
-    
     .form-control {
       border-radius: 40px;
       padding: 20px 49px;
@@ -486,21 +499,19 @@ ul {
     background-color: #ffffff87;
     border-radius: 40px;
 
-    h2{
+    h2 {
       font-weight: 300;
     }
-    .text-gradient{
-   
-      background: #B9A066;
-      background: linear-gradient(to right, #B9A066 0%, #75A0D6 100%);
+    .text-gradient {
+      background: #b9a066;
+      background: linear-gradient(to right, #b9a066 0%, #75a0d6 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    p{
+    p {
       font-size: 1rem;
       margin-top: 20px;
       font-weight: 200;
-
     }
 
     .form-control-search {
@@ -508,9 +519,6 @@ ul {
       background-repeat: no-repeat;
       background-position: calc(100% - 15px) center;
     }
-
-
-
   }
 }
 

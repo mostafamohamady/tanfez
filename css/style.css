@@ -186,9 +186,26 @@ ul {
   color: var(--main-btnprimary-fcolor);
   border: unset;
 }
+.btn-primary:focus {
+  background: var(--main-btn-background-color);
+  color: var(--main-btnprimary-fcolor);
+  border: unset;
+}
 
 .btn-primary--enter {
   min-width: 160px;
+}
+
+.input-button-container {
+  position: relative;
+}
+.input-button-container .form-control-inbtn {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  min-width: 160px;
+  border-radius: 40px !important;
 }
 
 .form-control {
@@ -453,8 +470,8 @@ ul {
   font-weight: 300;
 }
 .main-sec .seaechcontainer .text-gradient {
-  background: #B9A066;
-  background: linear-gradient(to right, #B9A066 0%, #75A0D6 100%);
+  background: #b9a066;
+  background: linear-gradient(to right, #b9a066 0%, #75a0d6 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
