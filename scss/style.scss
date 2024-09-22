@@ -13,6 +13,9 @@
   --input-placeholder-color: #b8c3c7;
   --textprimary-color: #3f6272;
   --textsecndary-color: #b39d74;
+  --navlink-fcolor: #577c8d;
+  --navlink-activ-fcolor: #b39d74;
+  --headline-border-color: #cddae0;
 }
 
 * {
@@ -199,8 +202,6 @@ ul {
   min-width: 160px;
 }
 
-
-
 .form-control {
   border-radius: 40px !important;
   padding: 20px 49px;
@@ -234,7 +235,6 @@ ul {
   left: 0;
   right: 0;
   bottom: 0;
- 
 }
 
 .login-footer .footer-container {
@@ -508,7 +508,6 @@ ul {
 
     box-shadow: 0px 6px 10px 0px rgb(217 222 227);
 
-
     h2 {
       font-weight: 300;
     }
@@ -535,14 +534,96 @@ ul {
   }
 }
 
-/******************************
+/*search result  page */
+.nav-pills--edit {
+  .nav-link {
+    color: var(--navlink-fcolor);
 
+    &.active {
+      color: var(--navlink-activ-fcolor) !important;
+      background-color: transparent;
 
-media
+      position: relative;
 
-*************
+      &::after {
+        content: "";
+        position: absolute;
+        width: 70%;
+        height: 3px;
+        background-color: var(--main-btn-background-color);
+        z-index: 100;
+        left: 50%;
+        transform: translate(-50%);
+        bottom: -1px;
+        transition: background-color 0.3s ease-in-out;
+      }
+    }
+  }
+}
+.tab-content--edit {
+  .tab-pane {
+    padding: 30px;
+    border-radius: 40px;
+    background-color: #f7f9fb;
+    min-height: 200px;
+    position: relative;
 
-*******************/
+    h3 {
+      position: absolute;
+      top: 50%;
+
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .title {
+    display: inline-block;
+    padding-inline-end: 13px;
+    min-width: 100px;
+  }
+  .amount {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  p {
+    font-weight: 200;
+    text-align: justify;
+    margin-top: 20px;
+  }
+}
+
+/*head line */
+.head-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    height: 2px;
+    background-color: #dde2e4;
+    z-index: 80;
+    left: 0;
+  }
+
+  span {
+    display: inline-block;
+    background-color: #f7f9fb;
+    position: relative;
+    z-index: 101;
+    padding-inline-end: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  .head-title--section {
+    background-color: transparent;
+  }
+}
+
+/*search result  page */
+
+/****************************** media *******************************/
 // Small devices (landscape phones, 576px and up)
 @media (max-width: 576px) {
   .login-form {
@@ -559,21 +640,17 @@ media
     margin-bottom: 40px;
   }
 
-  .input-button-container{
+  .input-button-container {
     display: block;
-
   }
-   .form-control-search{
+  .form-control-search {
     display: block;
     width: 100% !important;
-
   }
-  .form-control-inbtn{
+  .form-control-inbtn {
     position: unset !important;
     transform: unset !important;
     margin-top: 10px;
-
-
   }
 }
 
