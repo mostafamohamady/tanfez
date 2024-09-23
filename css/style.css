@@ -227,6 +227,13 @@ ul {
   z-index: 100;
 }
 
+.btn-back {
+  background-color: transparent;
+  border: 1px solid var(--textprimary-color);
+  color: var(--textprimary-color);
+  min-width: 120px;
+}
+
 /* login foter*/
 .login-footer {
   position: absolute;
@@ -703,7 +710,7 @@ ul {
 /*input date*/
 input[type=date] {
   position: relative;
-  padding: 20px 20px;
+  padding: 17px 17px;
   text-align: end;
 }
 
