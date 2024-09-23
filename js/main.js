@@ -83,21 +83,4 @@ gsap.to(".login-form", {
 
 
 
-/* show hide password*/
-let showPassBtn = document.querySelector("#showPasswprd");
-let inputPassword = document.querySelector("#inputPass");
-let showPassIcon = document.querySelector("#showPassIcon");
-let hidePassIcon = document.querySelector("#hidePassIcon");
 
-showPassBtn.addEventListener("click", function () {
-  if (inputPassword.type === "password") {
-    inputPassword.type = "text";
-    showPassIcon.style.display = "none";
-    hidePassIcon.style.display = "block";
-  } else {
-    inputPassword.type = "password";
-    showPassIcon.style.display = "block";
-
-    hidePassIcon.style.display = "none";
-  }
-});

@@ -598,7 +598,7 @@ ul {
 .table--edit tbody tr td {
   text-align: center;
   font-size: 1rem;
-  color: #0C3442;
+  color: #0c3442;
   padding: 0.5rem 0.5rem;
   vertical-align: middle;
 }
@@ -624,9 +624,9 @@ ul {
   display: none;
 }
 .table--edit tbody tr td .dropdown-center--edit .dropdown-toggle:focus {
-  background-color: #0C3442;
+  background-color: #0c3442;
   padding: 5px 10px;
-  background-color: #E2E9EB;
+  background-color: #e2e9eb;
   border-radius: 10px;
 }
 .table--edit tbody tr td .dropdown-center--edit .dropdown-menu {
@@ -639,6 +639,89 @@ ul {
 }
 
 /* // table*/
+/*modal*/
+.modal--edit {
+  background: rgba(63, 98, 114, 0.3843137255);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.modal--edit.fade {
+  transition: all 0.3s linear;
+}
+.modal--edit .modal-header {
+  border: none;
+}
+.modal--edit .modal-footer {
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.modal--edit .btn-close {
+  background: transparent url("../imges/Group 108036.svg") center/1.7em auto no-repeat;
+}
+.modal--edit .modal-title {
+  font-size: 1rem;
+}
+.modal--edit .modal-title span {
+  vertical-align: middle;
+  color: #0c3443;
+}
+.modal--edit .modal-title img {
+  width: 22px;
+}
+.modal--edit .modal-content {
+  border-radius: 40px;
+  padding: 1.5rem;
+}
+.modal--edit .frm-box {
+  padding: 1.5rem 1.2rem;
+  background-color: #ebf0f6;
+  border-radius: 40px;
+}
+.modal--edit .frm-box img {
+  margin-inline-end: 10px;
+  vertical-align: middle;
+}
+
+.form-select {
+  border-radius: 40px;
+  padding: 20px 49px;
+  font-size: 1.25em;
+  border: 1px solid var(--input-border);
+  box-shadow: 0px 7px 9px var(--input-box-shadow);
+  position: relative;
+  background-size: 20px 20px;
+  background-position: 25px center;
+}
+.form-select::-moz-placeholder {
+  color: var(--input-placeholder-color);
+}
+.form-select::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+/*input date*/
+input[type=date] {
+  position: relative;
+  padding: 20px 20px;
+  text-align: end;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+
+.date-input {
+  background-image: url("../imges/Group 97259.svg");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 28px 28px;
+}
+
+/* // input date*/
+/*//modal*/
 /****************************** media *******************************/
 @media (max-width: 576px) {
   .login-form {
@@ -665,5 +748,15 @@ ul {
     position: unset !important;
     transform: unset !important;
     margin-top: 10px;
+  }
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 900px;
   }
 }/*# sourceMappingURL=style.css.map */

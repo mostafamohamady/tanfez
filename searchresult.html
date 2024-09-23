@@ -91,7 +91,8 @@
 
                     </div>
                     <div class="col-md-6 text-end">
-                      <button class="btn btn-primary form-control-inbtn  px-3 " type="button "> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
+                      <!-- Button trigger modal -->
+                      <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#exampleModal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
 
                     </div>
                   </div>
@@ -258,10 +259,108 @@
       </footer>
     </div>
 
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade  modal--edit" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel"><img src="imges/Group 107863.svg" alt=""> <span> التنفيذ</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="#">
+        <h3 class="text-center">فتح ملف تنفيد</h3>
+        <p class="text-center " >الرقم الآلي للقضية <span class="text-secondary ">9675343</span></p>
+        <div class="frm-box">
+          <div class="row mb-2">
+            <div class="col-4 align-self-center"><img src="imges/Path 67658.svg" alt=""> <label for="">تاريخ فتح الملف</label></div>
+            <div class="col-8">
+              
+              <input type="date" class="form-control date-input" id="exampleInputdate" >
+            
+            </div>
+          </div>
+          <div class="row mb-2" >
+            <div class="col-4 align-self-center"><img src="imges/Group 107920.svg" alt=""> <label for="">المحافظة</label></div>
+            <div class="col-8">
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>اختر المحافظة</option>
+                <option value="1">العاصمة</option>
+                <option value="2">العاصمة</option>
+                <option value="3">العاصمة</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4 align-self-center"><img src="imges/Group 107872.svg" alt=""> <label for="">القسم المنشأ للملف</label></div>
+            <div class="col-8">
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>اختر القسم</option>
+                <option value="1">إدارة تنفيذ العاصمة</option>
+                <option value="2">إدارة تنفيذ العاصمة</option>
+                <option value="3">إدارة تنفيذ العاصمة</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-2 ">
+            <div class="col-4 align-self-center"><img src="imges/Group 107871.svg" alt=""> <label for="">رقم الملف</label></div>
+            <div class="col-8">
+
+              <input type="text" class="form-control" id="exampleInputdate" aria-describedby="emailHelp">
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+      </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
+        <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#exampleModal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
     <script src="js/gsap.min.js"></script>
 
     <script
       src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
+
+
+  <script>
+
+    
+const dateInputs = document.querySelectorAll('.date-input');
+console.log(dateInputs);
+dateInputs.forEach(input => {
+  input.addEventListener('click', function() {
+    console.log('Focus event triggered');
+    if (input.showPicker) {
+      input.showPicker(); // Open date picker when input gains focus
+    }
+  });
+});
+  </script>
+
+
   </body>
 </html>

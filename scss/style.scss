@@ -651,7 +651,7 @@ ul {
       td {
         text-align: center;
         font-size: 1rem;
-        color: #0C3442;
+        color: #0c3442;
         padding: 0.5rem 0.5rem;
         vertical-align: middle;
         &:first-of-type {
@@ -666,31 +666,27 @@ ul {
         &:not(:last-of-type) {
           border-left: 1px solid #efeeeb;
         }
-        img{
+        img {
           margin-inline-end: 7px;
         }
-        
 
-
-        .dropdown-center--edit{
-          .dropdown-toggle{
-            all:unset;
+        .dropdown-center--edit {
+          .dropdown-toggle {
+            all: unset;
             padding: 6px 12px;
-            &::after{
+            &::after {
               display: none;
             }
 
-            &:focus{
-              background-color: #0C3442;
+            &:focus {
+              background-color: #0c3442;
               padding: 5px 10px;
-              background-color: #E2E9EB;
+              background-color: #e2e9eb;
               border-radius: 10px;
             }
-
           }
 
-
-          .dropdown-menu{
+          .dropdown-menu {
             border-radius: 20px;
           }
         }
@@ -706,6 +702,89 @@ ul {
 }
 
 /* // table*/
+/*modal*/
+.modal--edit {
+  background: #3f627262;
+  backdrop-filter: blur(5px);
+  &.fade {
+    transition: all 0.3s linear;
+  }
+
+  .modal-header {
+    border: none;
+  }
+  .modal-footer {
+    border: none;
+    display: flex;
+    justify-content: center;
+  }
+  .btn-close {
+    background: transparent url("../imges/Group 108036.svg") center / 1.7em auto
+      no-repeat;
+  }
+  .modal-title {
+    font-size: 1rem;
+    span {
+      vertical-align: middle;
+      color: #0c3443;
+    }
+    img {
+      width: 22px;
+    }
+  }
+
+  .modal-content {
+    border-radius: 40px;
+    padding: 1.5rem;
+  }
+  .frm-box {
+    padding: 1.5rem 1.2rem;
+    background-color: #ebf0f6;
+    border-radius: 40px;
+    img {
+      margin-inline-end: 10px;
+      vertical-align: middle;
+    }
+  }
+}
+
+.form-select {
+  border-radius: 40px;
+  padding: 20px 49px;
+  font-size: 1.25em;
+  border: 1px solid var(--input-border);
+  box-shadow: 0px 7px 9px var(--input-box-shadow);
+  position: relative;
+  background-size: 20px 20px;
+  background-position: 25px center;
+
+  &::placeholder {
+    color: var(--input-placeholder-color);
+  }
+}
+
+/*input date*/
+input[type="date"] {
+  position: relative;
+  padding: 20px 20px;
+  text-align: end;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  color: transparent;
+  background: none;
+  z-index: 1;
+}
+.date-input {
+  background-image: url("../imges/Group 97259.svg");
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 28px 28px;
+}
+
+/* // input date*/
+
+/*//modal*/
 
 /****************************** media *******************************/
 // Small devices (landscape phones, 576px and up)
@@ -740,6 +819,9 @@ ul {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 700px;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -748,6 +830,9 @@ ul {
 
 // X-Large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 900px;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
