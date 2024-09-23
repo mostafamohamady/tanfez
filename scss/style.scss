@@ -40,7 +40,7 @@ ul {
   list-style-type: none;
 }
 
-.text-primary {
+.text-primarytext {
   color: var(--textprimary-color) !important;
 }
 .text-secondary {
@@ -622,6 +622,90 @@ ul {
 }
 
 /*search result  page */
+
+/*table*/
+
+.table--edit {
+  & > :not(caption) > * > * {
+    border: unset;
+  }
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+
+  thead {
+    th {
+      font-size: 1rem;
+      font-weight: 400;
+      color: #4f717e;
+      text-align: center;
+    }
+  }
+
+  tbody {
+    tr {
+      background-color: #fff;
+      box-shadow: 0px 0px 10px 0px rgb(217, 222, 227);
+      border-radius: 40px;
+      transition: all 0.3s ease-in-out;
+
+      td {
+        text-align: center;
+        font-size: 1rem;
+        color: #0C3442;
+        padding: 0.5rem 0.5rem;
+        vertical-align: middle;
+        &:first-of-type {
+          border-top-right-radius: 40px;
+          border-bottom-right-radius: 40px;
+        }
+        &:last-of-type {
+          border-top-left-radius: 40px;
+          border-bottom-left-radius: 40px;
+        }
+
+        &:not(:last-of-type) {
+          border-left: 1px solid #efeeeb;
+        }
+        img{
+          margin-inline-end: 7px;
+        }
+        
+
+
+        .dropdown-center--edit{
+          .dropdown-toggle{
+            all:unset;
+            padding: 6px 12px;
+            &::after{
+              display: none;
+            }
+
+            &:focus{
+              background-color: #0C3442;
+              padding: 5px 10px;
+              background-color: #E2E9EB;
+              border-radius: 10px;
+            }
+
+          }
+
+
+          .dropdown-menu{
+            border-radius: 20px;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: #f8f8f5;
+        box-shadow: 0px 0px 4px 0px rgba(177, 166, 104, 0.568);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+}
+
+/* // table*/
 
 /****************************** media *******************************/
 // Small devices (landscape phones, 576px and up)
