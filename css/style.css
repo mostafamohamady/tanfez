@@ -234,6 +234,32 @@ ul {
   min-width: 120px;
 }
 
+.btn-filter-container {
+  display: flex;
+  justify-content: end;
+}
+
+.form-control-datef {
+  width: 114px;
+  height: 104px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--main-btn-border-color);
+}
+.form-control-datef img {
+  display: block;
+  margin-bottom: 8px;
+}
+.form-control-datef span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+/*buttons*/
 /* login foter*/
 .login-footer {
   position: absolute;
@@ -725,6 +751,11 @@ input[type=date]::-webkit-calendar-picker-indicator {
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 28px 28px;
+}
+
+.text-date {
+  font-weight: 100;
+  font-size: 0.7rem;
 }
 
 /* // input date*/

@@ -229,14 +229,39 @@ ul {
   }
 }
 
-
-.btn-back{
-  background-color: transparent ;
+.btn-back {
+  background-color: transparent;
   border: 1px solid var(--textprimary-color);
   color: var(--textprimary-color);
   min-width: 120px;
-  
 }
+
+.btn-filter-container {
+  display: flex;
+  justify-content: end;
+}
+.form-control-datef {
+  width: 114px;
+  height: 104px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid var(--main-btn-border-color);
+
+  img {
+    display: block;
+    margin-bottom: 8px;
+  }
+  span {
+    display: block;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+}
+
+/*buttons*/
 
 /* login foter*/
 .login-footer {
@@ -791,11 +816,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-size: 28px 28px;
 }
 
+.text-date {
+  font-weight: 100;
+  font-size: 0.7rem;
+}
+
 /* // input date*/
-
-
-
-
 
 /*//modal*/
 
