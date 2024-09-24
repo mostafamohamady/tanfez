@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head></head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet" href="css/bootstrap.rtl.min.css"   />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="inner-page">
+      <header>
+        <div class="header--inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="logocontainer text-center">
+                  <img src="imges/inerlogo.svg" alt="logo" />
+                  <h6>الادارة العامة للتنفيذ</h6>
+
+                  <div class="text-container"><span>وزارة العدل</span></div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="notificatio-profile">
+                  <div class="notifiction">
+                    <button>
+                      <img src="imges/Notification_Icon.svg" alt="" srcset="" />
+                      <span class="noti-count">1</span>
+                    </button>
+                  </div>
+                  <div class="profile">
+                    <img src="imges/User_Img.png" alt="profile-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-sec ">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <!-- menu -->
+                <ul class="page-menu">
+                  <li class="item active">
+                    <a href="#">
+                      <div class="icon">
+                        <img src="imges/Search_Icon.svg" alt="" />
+                      </div>
+                      <div class="list-title"><h6>البحث بالرقم الالى</h6></div>
+                      <div class="count"></div>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <div class="icon">
+                        <img src="imges/E3lan_Icon.svg" alt="" />
+                      </div>
+                      <div class="list-title">
+                        <h6>الإعلان</h6>
+                        <span>ملفات قيد الاعلان</span>
+                      </div>
+                      <div class="count">39</div>
+                    </a>
+                  </li>
+                  <li class="item">
+                    <a href="#">
+                      <div class="icon">
+                        <img src="imges/Tanfez_Icon.svg" alt="" />
+                      </div>
+                      <div class="list-title">
+                        <h6>التنفيذ</h6>
+                        <span>ملفات قيد التنفيذ</span>
+                      </div>
+                      <div class="count">731</div>
+                    </a>
+                  </li>
+                </ul>
+                <!-- menu -->
+              </div>
+              <div class="col-md-9">
+                <!-- search result -->
+                <div class="search_result">
+                  <div class="row">
+                    <div class="col-md-6">
+                    <h3>الرقم الآلي للقضية</h2>
+                     <h6 class="text-secondary my-2">9675343</h6> 
+
+                    </div>
+                    <div class="col-md-6 text-end">
+                      <!-- Button trigger modal -->
+                      <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
+
+                    </div>
+                  </div>
+
+
+                  <div class="row mt-4">
+                    <div class="col-md-12">
+                      <ul class="nav nav-pills nav-pills--edit  mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">المحكمة الكلية</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">محكمة الاستئناف</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">محكمة التمييز</button>
+                        </li>
+                   
+                      </ul>
+                      <div class="tab-content tab-content--edit" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                          <div class="row">
+                            <div class="col-md-5">
+                              <div class="mb-3"><span class="text-secondary title ">نوع الحكم</span> <span class=" value">إبتدائي</span></div>
+                              <div class="mb-3"><span class="text-secondary title ">تاريخ الحكم</span> <span class="value">10 سبتمبر 2024</span></div>
+                              <div class="mb-3"><span class="text-secondary title ">المبلغ</span> <span class="text-secondary value amount">750 د.ك</span></div>
+  
+                            </div>
+                            <div class="col md-7">
+                              <div class=" head-line  "><span class="text-secondary  head-title">مضمون الحكم</span> </div>
+                              <p >حكمت المحكمة بإدانة المتهم بارتكاب جريمة القتل العمد مع سبق الإصرار والترصد، وذلك بعد ثبوت الأدلة وشهادة الشهود. وبناءً على ذلك، تقرر المحكمة معاقبة المتهم بالإعدام شنقًا وفقًا للمادة (150) من قانون الجزاء الكويتي، مع إلزامه بدفع الدية الشرعية لورثة المجني عليه. </p>
+  
+                            </div>
+
+                          </div>
+                         
+                            
+                          
+                          </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0"><h3>لا يوجد بيانات</h3></div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0"><h3>لا يوجد بيانات</h3></div>
+                       
+                      </div>
+
+
+                    </div>
+                    
+                  </div>
+
+                 
+                    <div class=" head-line  my-4 "><span class="text-secondary  head-title--section ">الأطراف</span> </div>
+                   
+                  
+                    <table class="table table--edit mb-5">
+                      <thead>
+                        <tr>
+                          <th scope="col">رقم</th>
+                          <th scope="col">الإسم</th>
+                          <th scope="col">الحالة</th>
+                          <th scope="col">الرقم المدني</th>
+                          <th scope="col">الجنسية</th>
+                          <th scope="col">نوع الشخص</th>
+                          <th scope="col">الآيبان</th>
+                          <th scope="col">خيارات</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                        
+                          <td>1</td>
+                          <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
+                          <td><span>مدعي</span></td>
+                          <td>288102204455</td>
+                          <td><img  src="imges/kuwait.svg" alt="flag"><span>كويتي</span> </td>
+                          <td>طبيعي</td>
+                          <td><a href="#" class="text-secondary"> <img src="imges/Group 107845.svg" alt=""><span>عرض</span></a></td>
+                          <td>
+                            <div class="dropdown-center dropdown-center--edit">
+                              <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="m-0" src="imges/Icon akar-more-vertical.svg" alt="">
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="imges/Group 107845.svg" alt=""> <span>تحديث رقم الآيبان</span> </a></li>
+                             
+                              </ul>
+                            </div>
+                        
+                        </td>
+                        </tr>
+                        <tr>
+                        
+                          <td>1</td>
+                          <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
+                          <td><span>مدعي</span></td>
+                          <td>288102204455</td>
+                          <td><img  src="imges/kuwait.svg" alt="flag"><span>كويتي</span> </td>
+                          <td>طبيعي</td>
+                          <td><a href="#" class="text-secondary"> <img src="imges/Group 107845.svg" alt=""><span>عرض</span></a></td>
+                          <td>
+                            <div class="dropdown-center dropdown-center--edit">
+                              <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="m-0" src="imges/Icon akar-more-vertical.svg" alt="">
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="imges/Group 107845.svg" alt=""> <span>تحديث رقم الآيبان</span> </a></li>
+                             
+                              </ul>
+                            </div>
+                        
+                        </td>
+                        </tr>
+                        <tr>
+                        
+                          <td>1</td>
+                          <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
+                          <td><span>مدعي</span></td>
+                          <td>288102204455</td>
+                          <td><img  src="imges/kuwait.svg" alt="flag"><span>كويتي</span> </td>
+                          <td>طبيعي</td>
+                          <td><a href="#" class="text-secondary"> <img src="imges/Group 107845.svg" alt=""><span>عرض</span></a></td>
+                          <td>
+                            <div class="dropdown-center dropdown-center--edit">
+                              <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="m-0" src="imges/Icon akar-more-vertical.svg" alt="">
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="imges/Group 107845.svg" alt=""> <span>تحديث رقم الآيبان</span> </a></li>
+                             
+                              </ul>
+                            </div>
+                        
+                        </td>
+                        </tr>
+                     
+                     
+                       
+                      </tbody>
+                    </table>
+
+
+
+
+
+                </div>
+                <!-- // search result -->
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="login-footer--inner">
+        <div class="footer-container text-center">
+          <p>
+            جميع الحقوق محفوظة لـ الإدارة العامة للتنفيذ
+            <span>&copy; </span> 2024
+          </p>
+          <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
+        </div>
+      </footer>
+    </div>
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade  modal--edit" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel"><img src="imges/Group 107863.svg" alt=""> <span> التنفيذ</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="#">
+        <h3 class="text-center">فتح ملف تنفيد</h3>
+        <p class="text-center " >الرقم الآلي للقضية <span class="text-secondary ">9675343</span></p>
+        <div class="frm-box">
+          <div class="row mb-2">
+            <div class="col-4 align-self-center"><img src="imges/Path 67658.svg" alt=""> <label for="">تاريخ فتح الملف</label></div>
+            <div class="col-8">
+              
+              <input type="date" class="form-control date-input" id="exampleInputdate" >
+            
+            </div>
+          </div>
+          <div class="row mb-2" >
+            <div class="col-4 align-self-center"><img src="imges/Group 107920.svg" alt=""> <label for="">المحافظة</label></div>
+            <div class="col-8">
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>اختر المحافظة</option>
+                <option value="1">العاصمة</option>
+                <option value="2">العاصمة</option>
+                <option value="3">العاصمة</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-2">
+            <div class="col-4 align-self-center"><img src="imges/Group 107872.svg" alt=""> <label for="">القسم المنشأ للملف</label></div>
+            <div class="col-8">
+
+              <select class="form-select" aria-label="Default select example">
+                <option selected>اختر القسم</option>
+                <option value="1">إدارة تنفيذ العاصمة</option>
+                <option value="2">إدارة تنفيذ العاصمة</option>
+                <option value="3">إدارة تنفيذ العاصمة</option>
+              </select>
+            </div>
+          </div>
+          <div class="row mb-2 ">
+            <div class="col-4 align-self-center"><img src="imges/Group 107871.svg" alt=""> <label for="">رقم الملف</label></div>
+            <div class="col-8">
+
+              <input type="text" class="form-control" id="exampleInputdate" aria-describedby="emailHelp">
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+      </form>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
+        <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#exampleModal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <script src="js/gsap.min.js"></script>
+
+    <script
+      src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+  <script>
+
+    
+const dateInputs = document.querySelectorAll('.date-input');
+console.log(dateInputs);
+dateInputs.forEach(input => {
+  input.addEventListener('click', function() {
+    console.log('Focus event triggered');
+    if (input.showPicker) {
+      input.showPicker(); // Open date picker when input gains focus
+    }
+  });
+});
+  </script>
+
+
+  </body>
+</html>
