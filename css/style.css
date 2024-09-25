@@ -787,11 +787,13 @@ input[type=date]::-webkit-calendar-picker-indicator {
   height: auto;
   position: absolute;
   top: 50%;
-  right: 12px;
+  right: 0px;
   width: 22px;
   transform: translateY(-50%);
   border-radius: 50%;
   z-index: 100;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 
 .form-floating--select-img.fade-in label {
@@ -806,6 +808,12 @@ input[type=date]::-webkit-calendar-picker-indicator {
   padding-right: 40px;
   transition: all 0.3s ease-in-out;
 }
+.form-floating--select-img.fade-in .user-image {
+  right: 12px;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+}
+
 /*//modal*/
 /****************************** media *******************************/
 @media (max-width: 576px) {
