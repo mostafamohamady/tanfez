@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head></head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet" href="css/bootstrap.rtl.min.css"   />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="inner-page">
+      <header>
+        <div class="header--inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="logocontainer text-center">
+                  <img src="imges/inerlogo.svg" alt="logo" />
+                  <h6>الادارة العامة للتنفيذ</h6>
+
+                  <div class="text-container"><span>وزارة العدل</span></div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="notificatio-profile">
+                  <div class="notifiction">
+                    <button>
+                      <img src="imges/Notification_Icon.svg" alt="" srcset="" />
+                      <span class="noti-count">1</span>
+                    </button>
+                  </div>
+                  <div class="profile">
+                    <img src="imges/User_Img.png" alt="profile-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-sec ">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                  <ul class="page-menu">
+                    <li class="item ">
+                      <a href="#">
+                        <div class="icon">
+                          <img src="imges/Search_Icon.svg" alt="" />
+                        </div>
+                        <div class="list-title"><h6>البحث بالرقم الالى</h6></div>
+                        <div class="count"></div>
+                      </a>
+                    </li>
+                    <li class="item active">
+                      <a href="#">
+                        <div class="icon">
+                          <img src="imges/E3lan_Icon.svg" alt="" />
+                        </div>
+                        <div class="list-title">
+                          <h6>الإعلان</h6>
+                          <span>ملفات قيد الاعلان</span>
+                        </div>
+                        <div class="count">39</div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#">
+                        <div class="icon">
+                          <img src="imges/Tanfez_Icon.svg" alt="" />
+                        </div>
+                        <div class="list-title">
+                          <h6>التنفيذ</h6>
+                          <span>ملفات قيد التنفيذ</span>
+                        </div>
+                        <div class="count">731</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                
+                  <div class="row">
+                    <div class="col-md-6">
+                    <h3>إعلان جديد</h2>
+                     <h6 class="text-secondary my-2">يُرجى إدخال البيانات التاليه</h6> 
+
+                    </div>
+                    <div class="col-md-6   ">
+                    
+
+                    </div>
+                  </div>
+
+                  <form action="#">
+                    <div class="row">
+                     
+  
+                    
+  
+                      <div class="col-md-3">
+
+                   
+
+                        <div class="form-floating"  style="position: relative; margin-bottom: 20px;">
+                          <label for="cars1">Choose a car:</label>
+                          <select id="cars1" class="img-select form-select">
+                            <option value="">اختر</option>
+                            <option value="1" data-img="imges/Search_Icon.svg">محمد ياسر</option>
+                            <option value="2" data-img="imges/Tanfez_Icon.svg">ياسر عصام</option>
+                          
+                          </select>
+                          <img class="car-image" src="" alt="user img" style="display: none; position: absolute;">
+                        </div>
+                 
+
+                        </div>
+                      
+                    </div>
+
+
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 
+                  
+
+
+
+                  </form>
+
+                  <div class="text-center">
+                    <h2>لم يتم إضافة أطراف حتى الآن</h2>
+                    <p>فضلاً قُم بإضافة طرف جديد عن طريق تعبئة البيانات بالأعلى ومن ثُم الضغط على زر “+” للإضافة</p>
+                  </div>
+
+
+
+                
+              </div>
+            
+          </div>
+        </div>
+        
+        </div>
+      </main>
+
+      <footer class="login-footer--inner">
+        <div class="footer-container text-center">
+          <p>
+            جميع الحقوق محفوظة لـ الإدارة العامة للتنفيذ
+            <span>&copy; </span> 2024
+          </p>
+          <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
+        </div>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="js/gsap.min.js"></script>
+
+    <script
+      src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+  <script>
+
+    
+const dateInputs = document.querySelectorAll('.date-input');
+console.log(dateInputs);
+dateInputs.forEach(input => {
+  input.addEventListener('click', function() {
+    
+    if (input.showPicker) {
+      input.showPicker(); // Open date picker when input gains focus
+    }
+  });
+});
+
+  
+  /**/
+  const selectElements = document.querySelectorAll('.img-select');
+
+    selectElements.forEach(select => {
+      select.addEventListener('change', function() {
+        var selectedOption = this.options[this.selectedIndex];
+        var carValue = selectedOption.value;
+        var carImgUrl = selectedOption.getAttribute('data-img');
+        var carDescription = document.getElementById("car-description");
+        var parentElement = this.parentElement;
+
+        
+        var carImg = this.nextElementSibling; 
+
+
+        if (carValue) {
+          carImg.src = carImgUrl;
+          carImg.style.display = "block";
+          parentElement.classList.add("fade-in");
+          
+        } else {
+          carImg.style.display = "none"; 
+         
+        }
+
+        
+      });
+    });
+
+
+
+
+
+  </script>
+
+
+  </body>
+</html>

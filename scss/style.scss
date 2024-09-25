@@ -821,7 +821,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 0.7rem;
 }
 
+.date-input--icon-r {
+  background-position: calc(100% - 10px) center;
+}
+.form-floating{
+  label{
+    padding-right: 40px;
+  }
+  
+}
+
 /* // input date*/
+
+
+#car-description {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.car-image {
+  width: 150px; /* Adjust width as needed */
+  height: auto;
+
+  position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 22px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+
 
 /*//modal*/
 
