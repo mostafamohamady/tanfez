@@ -767,15 +767,22 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 /* // input date*/
-#car-description {
-  transition: opacity 1s ease-in-out;
+.form-floating--select-img label {
+  padding: unset;
+  padding-top: 4px;
+  padding-right: 26px;
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
 }
-
-.fade-in {
-  opacity: 1;
+.form-floating--select-img select {
+  padding: unset;
+  padding-top: 10px !important;
+  padding-bottom: 1px !important;
+  padding-right: 25px;
+  line-height: 3.5;
+  transition: all 0.3s ease-in-out;
 }
-
-.car-image {
+.form-floating--select-img .user-image {
   width: 150px; /* Adjust width as needed */
   height: auto;
   position: absolute;
@@ -784,8 +791,21 @@ input[type=date]::-webkit-calendar-picker-indicator {
   width: 22px;
   transform: translateY(-50%);
   border-radius: 50%;
+  z-index: 100;
 }
 
+.form-floating--select-img.fade-in label {
+  padding: unset;
+  padding-top: 4px;
+  padding-right: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.form-floating--select-img.fade-in select {
+  padding-top: 10px !important;
+  padding-bottom: 1px !important;
+  padding-right: 40px;
+  transition: all 0.3s ease-in-out;
+}
 /*//modal*/
 /****************************** media *******************************/
 @media (max-width: 576px) {

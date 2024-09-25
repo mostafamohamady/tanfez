@@ -105,15 +105,16 @@
 
                    
 
-                        <div class="form-floating"  style="position: relative; margin-bottom: 20px;">
-                          <label for="cars1">Choose a car:</label>
-                          <select id="cars1" class="img-select form-select">
+                        <div class="form-floating  form-floating--select-img "  style="position: relative; margin-bottom: 20px;">
+                          <label for="select-img">المندوب</label>
+                          <select id="select-img" class="img-select form-select">
                             <option value="">اختر</option>
-                            <option value="1" data-img="imges/Search_Icon.svg">محمد ياسر</option>
+                            <option value="1" data-img="imges/Search_Icon.svg">محمد ياسر </option>
                             <option value="2" data-img="imges/Tanfez_Icon.svg">ياسر عصام</option>
                           
                           </select>
-                          <img class="car-image" src="" alt="user img" style="display: none; position: absolute;">
+                          
+                          <img class="user-image" src="" alt="user img" style="display: none; position: absolute;">
                         </div>
                  
 
@@ -209,25 +210,20 @@ dateInputs.forEach(input => {
       select.addEventListener('change', function() {
         var selectedOption = this.options[this.selectedIndex];
         var carValue = selectedOption.value;
-        var carImgUrl = selectedOption.getAttribute('data-img');
-        var carDescription = document.getElementById("car-description");
-        var parentElement = this.parentElement;
-
+        var selectImgUrl = selectedOption.getAttribute('data-img');
         
-        var carImg = this.nextElementSibling; 
-
-
+        var parentElement = this.parentElement;
+        var optionImg = this.nextElementSibling; 
         if (carValue) {
-          carImg.src = carImgUrl;
-          carImg.style.display = "block";
+          optionImg.src = selectImgUrl;
+          optionImg.style.display = "block";
           parentElement.classList.add("fade-in");
           
         } else {
-          carImg.style.display = "none"; 
+          parentElement.classList.remove("fade-in");
+          optionImg.style.display = "none"; 
          
         }
-
-        
       });
     });
 
