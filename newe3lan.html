@@ -102,27 +102,174 @@
                     
   
                       <div class="col-md-3">
-
-                   
-
-                        <div class="form-floating  form-floating--select-img "  style="position: relative; margin-bottom: 20px;">
-                          <label for="select-img">المندوب</label>
+                        
+                        <div class="form-floating  form-floating--select-img form-floating--select-withoutimg  "  style="position: relative; margin-bottom: 20px;">
+                          <label for="select-img">نوع الإعلان</label>
                           <select id="select-img" class="img-select form-select">
-                            <option value="" selected disabled>اختر</option>
-                            <option value="1" data-img="imges/Search_Icon.svg">محمد ياسر </option>
+                            <option value="" selected disabled></option>
+                            <option value="1" data-img="imges/Mask Group 105.png">قضائي</option>
                             <option value="2" data-img="imges/Tanfez_Icon.svg">ياسر عصام</option>
-                          
                           </select>
-                          
-                          <img class="user-image" src="" alt="user img" style="display: none; position: absolute;">
+                         
                         </div>
+
+                
                  
 
                         </div>
+
+                        <div class="col-md-3">
+
+                          <div class="form-floating mb-3">
+                            <input type="" class="form-control date-input" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">تاريخ الإعلان</label>
+                          </div>
+
+                         
+
+                   
+  
+                          </div>
+
+
+
+                        <div class="col-md-3">
+
+
+                            <div class="form-floating  form-floating--select-img "  style="position: relative; margin-bottom: 20px;">
+                              <label for="select-img">المندوب</label>
+                              <select id="select-img" class="img-select form-select">
+                                <option value="" selected disabled></option>
+                                <option value="1" data-img="imges/Mask Group 105.png">محمد ياسر </option>
+                                <option value="2" data-img="imges/Tanfez_Icon.svg">ياسر عصام</option>
+                              </select>
+                              <img class="user-image" src="" alt="user img" style="display: none; position: absolute;">
+                            </div>
                       
+  
+                         </div>
+
+
+                         <div class="col-md-3">
+                          <div class="form-floating mb-3">
+                            <input type="" class="form-control date-input" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">تاريخ الخروج</label>
+                          </div>
+                         </div>
+                      
+                    </div>
+                    <div class=" head-line  my-4 "><span class="text-secondary  head-title--section ">الأطراف</span> </div>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-floating  form-floating--select-img "  style="position: relative; margin-bottom: 20px;">
+                          <label for="select-img">المعلن </label>
+                          <select id="select-img" class="img-select form-select">
+                            <option value="" selected disabled></option>
+                            <option value="1" data-img="imges/Mask Group 105.png">محمد ياسر </option>
+                            <option value="2" data-img="imges/Tanfez_Icon.svg">ياسر عصام</option>
+                          </select>
+                          <img class="user-image" src="" alt="user img" style="display: none; position: absolute;">
+                        </div>
+                        
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-floating  form-floating--select-img "  style="position: relative; margin-bottom: 20px;">
+                          <label for="select-img">المعلن اليه</label>
+                          <select id="select-img" class="img-select form-select">
+                            <option value="" selected disabled></option>
+                            <option value="1" data-img="imges/Mask Group 105.png">محمد ياسر </option>
+                            <option value="2" data-img="imges/Tanfez_Icon.svg">ياسر عصام</option>
+                          </select>
+                          <img class="user-image" src="" alt="user img" style="display: none; position: absolute;">
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-md-3">
+                        <div class="form-floating  form-floating--select-img form-floating--select-withoutimg  "  style="position: relative; margin-bottom: 20px;">
+                          <label for="select-img">نوع الحكم</label>
+                          <select id="select-img" class="img-select form-select">
+                            <option value="" selected disabled></option>
+                            <option value="1" data-img="imges/Mask Group 105.png">إستئناف</option>
+                            
+                          </select>
+                         
+                        </div>
+
+                      </div>
+                      <div class="col-md-2">
+                        <div class="form-floating mb-3">
+                          <input type="email" class="form-control" id="floatingInputa" placeholder="">
+                          <label for="floatingInput">رقم الحكم</label>
+                        </div>
+                      </div>
+                      <div class="col-md-3">
+                        <div class="form-floating mb-3">
+                          <input type="" class="form-control date-input" id="floatingInputb" placeholder="">
+                          <label for="floatingInput">تاريخ الحكم</label>
+                        </div>
+                       </div>
+                       <div class="col-md-3">
+                        <div class="form-floating mb-3">
+                          <input type="number" class="form-control" id="floatingInputc" placeholder="">
+                          <label for="floatingInput">المبلغ</label>
+                        </div>
+                      </div>
+                      <div class="col-md-1">
+                       <div class="form-floating mb-3">
+
+                        <button class="btn btn-add" type="button"><img src="imges/Icon ionic-ios-close-circle-outline.svg" alt="add" ></button>
+                      </div>
+                       
+
+
+
+                      </div>
+                      
+
                     </div>
 
 
+                    <table class="table table--edit mb-5">
+                      <thead>
+                        <tr>
+                          <th scope="col">رقم</th>
+                          <th scope="col">المعلن</th>
+                          <th scope="col">المعلن إليه</th>
+                          <th scope="col">المبلغ</th>
+                          <th scope="col">حالة الإعلان</th>
+                          <th scope="col">حذف</th>
+                       
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          
+                            <td>1</td>
+                            <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
+                            <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
+                            
+                            <td><span>3000.000</span><span class="currency-flag ">دينار كويتي <img  src="imges/kuwait.svg" alt="flag"></span> </td>
+                          
+                            <td>إلكتروني</td>
+                            
+                            <td>
+                              <div class="dropdown-center dropdown-center--edit">
+                                <button class=" tb-btn-delete" type="button" >
+                                <img class="m-0" src="imges/Group 108012.svg" alt="">
+                                </button>
+                                
+                              </div>
+                          
+                          </td>
+                        </tr>
+                 
+                     
+                     
+                       
+                      </tbody>
+                    </table>
 
                   
 
@@ -146,11 +293,14 @@
 
                   </form>
 
-                  <div class="text-center">
+
+
+                  <!-- empty message -->
+                  <div class="text-center mb-5">
                     <h2>لم يتم إضافة أطراف حتى الآن</h2>
                     <p>فضلاً قُم بإضافة طرف جديد عن طريق تعبئة البيانات بالأعلى ومن ثُم الضغط على زر “+” للإضافة</p>
                   </div>
-
+                  <!-- // empty message -->
 
 
                 
@@ -197,8 +347,15 @@ dateInputs.forEach(input => {
   input.addEventListener('click', function() {
     
     if (input.showPicker) {
+      input.type='date'
       input.showPicker(); // Open date picker when input gains focus
+
+
+    }else{
+      input.type='text'
     }
+
+
   });
 });
 
@@ -214,16 +371,41 @@ dateInputs.forEach(input => {
         
         var parentElement = this.parentElement;
         var optionImg = this.nextElementSibling; 
-        if (carValue) {
-          optionImg.src = selectImgUrl;
-          optionImg.style.display = "block";
-          parentElement.classList.add("fade-in");
-          
+        if (optionImg !==null) {
+          if (carValue) {
+
+            optionImg.src = selectImgUrl;
+
+
+            optionImg.style.display = "block";
+            parentElement.classList.add("fade-in");
+
+            } else {
+            parentElement.classList.remove("fade-in");
+            optionImg.style.display = "none"; 
+
+            }
         } else {
-          parentElement.classList.remove("fade-in");
-          optionImg.style.display = "none"; 
-         
+
+
+          if (carValue) {
+
+           
+
+
+      
+              parentElement.classList.add("fade-in");
+
+              } else {
+              parentElement.classList.remove("fade-in");
+          
+
+              }
+
+          
         }
+       
+
       });
     });
 

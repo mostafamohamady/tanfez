@@ -261,6 +261,27 @@ ul {
   }
 }
 
+.btn-add {
+  background-color: #3f6272;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  img{
+    width: 30px;
+    height: 30px;
+    
+  }
+}
+
+.tb-btn-delete{
+  border: none;
+}
+
 /*buttons*/
 
 /* login foter*/
@@ -735,6 +756,22 @@ ul {
   }
 }
 
+.currency-flag{
+  font-size: .7rem;
+  background-color: #EBF0F6;
+  border-radius: 20px;
+  margin:0 10px  ;
+  padding: 5px;
+  display: inline-block;
+  img{
+    width: 14px;
+    margin: 2px;
+  }
+}
+
+
+
+
 /* // table*/
 /*modal*/
 .modal--edit {
@@ -832,10 +869,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /* // input date*/
 
+/* animated select */
+
 .form-floating--select-img {
   label {
     padding: unset;
-    padding-top: 4px;
+    padding-top: 17px;
     padding-right: 26px;
     z-index: 100;
     transition: all 0.3s ease-in-out;
@@ -847,8 +886,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-right: 25px;
     line-height: 3.5;
     transition: all 0.3s ease-in-out;
-
-    
   }
 
   .user-image {
@@ -881,11 +918,29 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 
   .user-image {
-    right: 12px;
+    right: 7px;
+    width: 30px;
+    height: 30px;
     opacity: 1;
     transition: all 0.3s ease-in-out;
   }
 }
+
+.form-floating--select-withoutimg.fade-in {
+  label {
+    padding: unset;
+    padding-top: 4px;
+    padding-right: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+  select {
+    padding-top: 10px !important;
+    padding-bottom: 1px !important;
+    padding-right: 25px;
+    transition: all 0.3s ease-in-out;
+  }
+}
+/* // animated select */
 
 /*//modal*/
 
