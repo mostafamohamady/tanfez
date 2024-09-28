@@ -279,6 +279,31 @@ ul {
 }
 
 /*buttons*/
+/*title with line*/
+.text--vline {
+  position: relative;
+  z-index: 88;
+}
+.text--vline h2 {
+  position: relative;
+  display: inline;
+  background-color: #f5f7fb;
+  color: rgba(87, 124, 141, 0.5764705882);
+  z-index: 100;
+}
+.text--vline hr {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+  z-index: 99;
+}
+.text--vline p {
+  padding-top: 10px;
+  color: rgba(87, 124, 141, 0.5764705882);
+}
+
+/**/
 /* login foter*/
 .login-footer {
   position: absolute;
@@ -863,6 +888,40 @@ input[type=date]::-webkit-calendar-picker-indicator {
 }
 
 /* // animated select */
+.absolute-bottom-form {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: #fff;
+  padding: 1rem;
+}
+.absolute-bottom-form h5 {
+  font-size: 1rem;
+}
+.absolute-bottom-form h6 {
+  font-weight: 100;
+  font-size: 0.9rem;
+}
+.absolute-bottom-form p {
+  font-size: 0.8rem;
+}
+.absolute-bottom-form .label {
+  position: relative;
+}
+.absolute-bottom-form .label span {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  background-color: var(--main-btn-background-color);
+  font-size: 0.7rem;
+  color: #fff;
+  border-radius: 15px;
+  padding: 5px;
+  transform: translateY(-50%);
+}
+
 /*//modal*/
 /****************************** media *******************************/
 @media (max-width: 576px) {
