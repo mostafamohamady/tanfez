@@ -270,53 +270,44 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
- 
-  img{
+
+  img {
     width: 30px;
     height: 30px;
-    
   }
 }
 
-.tb-btn-delete{
+.tb-btn-delete {
   border: none;
 }
 
 /*buttons*/
 /*title with line*/
 
-.text--vline{
+.text--vline {
   position: relative;
   z-index: 88;
-  h2{
+  h2 {
     position: relative;
     display: inline;
     background-color: #f5f7fb;
     color: #577c8d93;
     z-index: 100;
   }
-  hr{
+  hr {
     position: absolute;
-    left:0;
+    left: 0;
     right: 0;
     top: 30%;
-    z-index: 99 ;
-   
-
+    z-index: 99;
   }
-  p{
+  p {
     padding-top: 10px;
-    color: #577c8d93;  
+    color: #577c8d93;
   }
-
 }
 
-
 /**/
-
-
-
-
 
 /* login foter*/
 .login-footer {
@@ -790,21 +781,18 @@ ul {
   }
 }
 
-.currency-flag{
-  font-size: .7rem;
-  background-color: #EBF0F6;
+.currency-flag {
+  font-size: 0.7rem;
+  background-color: #ebf0f6;
   border-radius: 20px;
-  margin:0 10px  ;
+  margin: 0 10px;
   padding: 5px;
   display: inline-block;
-  img{
+  img {
     width: 14px;
     margin: 2px;
   }
 }
-
-
-
 
 /* // table*/
 /*modal*/
@@ -976,48 +964,167 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 /* // animated select */
 
-.absolute-bottom-form{
+.form-control--amount {
+  background-image: url("../imges/Group 107994.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 20px) center;
+  background-size: 28px 28px;
+  padding: 6px 55px !important;
+  text-align: end;
+}
+
+.form-floating .floatingInput--amount {
+  padding-right: 70px !important;
+}
+.form-floating
+  > .form-control:not(:placeholder-shown)
+  ~ label.floatingInput--amount {
+  padding-top: 8px !important;
+  padding-right: 80px !important;
+}
+
+.elhspa__amount-box {
+  padding: 2rem;
+  border-radius: 40px;
+  background-color: #ffffff78;
+
+  .currency-icon {
+    align-self: center;
+  }
+  .amount-box__total {
+    position: relative;
+    p {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--textsecndary-color);
+      display: inline;
+    }
+    .currency-flag {
+      vertical-align: text-top;
+      span {
+        color: #3f6272;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+/* switch btn */
+.switch-container {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  height: 34px;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #eaf0f2;
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.switch-label .switch-slider {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  background-color: #a0b6be;
+  border-radius: 50%;
+  transition: transform 0.2s;
+}
+
+.switch-label .switch-inner {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  color: #a0b6be;
+  font-size: 12px;
+}
+
+.switch-inner-true {
+  display: none;
+}
+.switch-inner-false {
+  display: block;
+}
+
+.switch-input:checked + .switch-label {
+  background-color: #4caf50;
+}
+.switch-input:checked + .switch-label {
+  .switch-inner-true {
+    display: block;
+    color: #73905b;
+  }
+  .switch-inner-false {
+    display: none;
+  }
+}
+
+.switch-input:checked + .switch-label {
+  background-color: #e9f4e1;
+}
+
+.switch-input:checked + .switch-label .switch-slider {
+  transform: translateX(85px);
+  background-color: #73905b;
+}
+
+.switch-input:checked + .switch-label .switch-inner {
+  content: "OFF";
+}
+
+/*//switch btn*/
+
+.absolute-bottom-form {
   position: fixed;
-  left:0;
+  left: 0;
   right: 0;
   bottom: 0;
   z-index: 100;
   background-color: #fff;
   padding: 1rem;
-  h5{
+  h5 {
     font-size: 1rem;
   }
 
-  h6{
+  h6 {
     font-weight: 100;
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
-  p{
-    font-size: .8rem;
+  p {
+    font-size: 0.8rem;
   }
-  .label{
+  .label {
     position: relative;
 
-    span{
+    span {
       position: absolute;
       left: 0;
       top: 50%;
       background-color: var(--main-btn-background-color);
-      font-size: .7rem;
+      font-size: 0.7rem;
       color: #fff;
       border-radius: 15px;
       padding: 5px;
       transform: translateY(-50%);
     }
-
   }
-
-
 }
-
-
-
-
 
 /*//modal*/
 

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head></head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet" href="css/bootstrap.rtl.min.css"   />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="inner-page" style="padding-bottom: 200px;">
+      <header>
+        <div class="header--inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="logocontainer text-center">
+                  <img src="imges/inerlogo.svg" alt="logo" />
+                  <h6>الادارة العامة للتنفيذ</h6>
+
+                  <div class="text-container"><span>وزارة العدل</span></div>
+                </div>
+              </div>
+              <div class="col-md-9">
+                <div class="notificatio-profile">
+                  <div class="notifiction">
+                    <button>
+                      <img src="imges/Notification_Icon.svg" alt="" srcset="" />
+                      <span class="noti-count">1</span>
+                    </button>
+                  </div>
+                  <div class="profile">
+                    <img src="imges/User_Img.png" alt="profile-img" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="main-sec ">
+          <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                  <ul class="page-menu">
+                    <li class="item ">
+                      <a href="#">
+                        <div class="icon">
+                          <img src="imges/Search_Icon.svg" alt="" />
+                        </div>
+                        <div class="list-title"><h6>البحث بالرقم الالى</h6></div>
+                        <div class="count"></div>
+                      </a>
+                    </li>
+                    <li class="item ">
+                      <a href="#">
+                        <div class="icon">
+                          <img src="imges/E3lan_Icon.svg" alt="" />
+                        </div>
+                        <div class="list-title">
+                          <h6>الإعلان</h6>
+                          <span>ملفات قيد الاعلان</span>
+                        </div>
+                        <div class="count">39</div>
+                      </a>
+                    </li>
+                    <li class="item active">
+                      <a href="#">
+                        <div class="icon">
+                          <img src="imges/E3lan_Icon.svg" alt="" />
+                        </div>
+                        <div class="list-title">
+                          <h6>الحسبة</h6>
+                          <span>ملفات قيدة الحسبة</span>
+                        </div>
+                        <div class="count">39</div>
+                      </a>
+                    </li>
+                    <li class="item">
+                      <a href="#">
+                        <div class="icon">
+                          <img src="imges/Tanfez_Icon.svg" alt="" />
+                        </div>
+                        <div class="list-title">
+                          <h6>التنفيذ</h6>
+                          <span>ملفات قيد التنفيذ</span>
+                        </div>
+                        <div class="count">731</div>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-9">
+                
+                  <div class="row mb-3">
+                    <div class="col-md-6">
+                    <h3>الحسبة</h2>
+                     <h6 class="text-secondary my-2">يُرجى إدخال البيانات التاليه</h6> 
+
+                    </div>
+                    <div class="col-md-6   ">
+                    
+
+                    </div>
+                  </div>
+
+                  <form action="#">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <div class="form-floating  form-floating--select-img "  style="position: relative; margin-bottom: 20px;">
+                          <label for="select-img">الطرف</label>
+                          <select id="select-img" class="img-select form-select">
+                            <option value="" selected disabled></option>
+                            <option value="1" data-img="imges/Mask Group 105.png">محمد ياسر </option>
+                            <option value="2" data-img="imges/Tanfez_Icon.svg">ياسر عصام</option>
+                          </select>
+                          <img class="user-image" src="" alt="user img" style="display: none; position: absolute;">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="form-floating  form-floating--select-img form-floating--select-withoutimg  "  style="position: relative; margin-bottom: 20px;">
+                          <label for="select-img">طبيعة الطرف</label>
+                          <select id="select-img" class="img-select form-select">
+                            <option value="" selected disabled></option>
+                            <option value="1" >مُدعى عليه</option>
+                            <option value="2" >مُدعى عليه</option>
+                          </select>
+                        </div>
+
+                      </div>
+                    </div>
+                 
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-floating  form-floating--select-img form-floating--select-withoutimg  "  style="position: relative; margin-bottom: 20px;">
+                            <label for="select-img">جهة إصدار الحكم</label>
+                            <select id="select-img" class="img-select form-select">
+                              <option value="" selected disabled></option>
+                              <option value="1" >محكمة التمييز</option>
+                              <option value="2" >محكمة التمييز</option>
+                            </select>
+                           
+                          </div>
+                        
+                        </div>
+                        <div class="col-md-4">
+                          <span>الحكم يتضمن ما يستجد؟ <img src="imges/Group 97963.svg" alt=""></span>
+
+                       
+                          
+                         
+                        </div>
+                        <div class="col-md-2">
+                          
+                          <div class="switch-container">
+                            <input type="checkbox" id="customSwitch" class="switch-input" />
+                            <label for="customSwitch" class="switch-label">
+                              <span class="switch-inner switch-inner-true text-end px-3">نعم يتضمن</span>
+                              <span class="switch-inner switch-inner-false">لا</span>
+                              <span class="switch-slider"></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control form-control--amount" id="floatingInputc" placeholder="">
+                            <label for="floatingInput " class=" floatingInput--amount">مبلغ قيمة الحكم</label>
+                          </div>
+                        
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-floating mb-3">
+                            <input type="number" class="form-control form-control--amount" id="floatingInputc" placeholder="">
+                            <label for="floatingInput " class=" floatingInput--amount" >مبلغ المصروفات والرسوم</label>
+                          </div>
+
+                        </div>
+                        <div class="col-md-4">
+                          <div class="form-floating  form-floating--select-img "  style="position: relative; margin-bottom: 20px;">
+                            <label for="select-img">العملة</label>
+                            <select id="select-img" class="img-select form-select">
+                              <option value="" selected disabled></option>
+                              <option value="1" data-img="imges/kuwait.svg">دينار كويتي</option>
+                              <option value="2" data-img="imges/kuwait.svg">دينار كويتي</option>
+                            </select>
+                            <img class="user-image" src="" alt="user img" style="display: none; position: absolute;">
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row mb-5">
+                        <div class="col-md-12">
+                          <div class="elhspa__amount-box">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="d-flex">
+                                  <div class="currency-icon">  <img src="imges/Group 108018.svg" alt="" srcset=""></div>
+                                  <div class="px-5 amount-box__total">
+                                    <h2>الإجمالي</h2>
+                                    <p class=""><span>3,000,000 </span><span class="currency-flag ">  <span>دينار كويتي </span><img src="imges/kuwait.svg" alt="flag"> </span></p>
+                                    
+                                  </div>
+                                </div>
+                                  
+                                </div>
+                              <div class="col-md-6">
+                                <div class="d-flex">
+                                 
+                                  <div class="px-5 amount-box__total">
+                                    <h2>المتبقي</h2>
+                                    <p class=""><span>3454,00 </span><span class="currency-flag ">  <span>دينار كويتي </span><img src="imges/kuwait.svg" alt="flag"> </span></p>
+                                    
+                                  </div>
+                                </div>
+                                  
+                                </div>
+                              
+    
+                            </div>
+                          </div>
+
+
+                        </div>
+
+                      </div>
+                   
+
+
+
+
+                  </form>
+
+
+           
+                
+              </div>
+          </div>
+        </div>
+
+        <!-- start absolute form -->
+        <div class="absolute-bottom-form">
+          <div class="container">
+
+            <div class="row">
+              <div class="col-md-3">
+              
+              </div>
+            
+              <div class="col-md-9">
+  
+                <div class="row">
+                  <div class="col-md-9">
+                    <h5>بيانات القضية</h5>
+                    <div class="row">
+                      <div class="col-md-2">
+                        <h6>الرقم الآلي</h6>
+                        <p>9675343</p>
+                      </div>
+                      <div class="col-md-3">
+                        <h6>المدعي</h6>
+                        <p>محمد خالد عبدالله</p>
+                      </div>
+                      <div class="col-md-4">
+                        <h6>المدعى عليه</h6>
+
+                        <div class="label">
+                          <p>حور احمد كامل الفضلي3</p>
+                          <span >+2 عرض</span>
+                        </div>
+                       
+                      
+                      </div>
+                    
+                    </div>
+      
+                  </div>
+                  <div class="col-md-3">
+                    <button type="button" class="btn btn-primary"><span>حفظ</span>  </button>
+                  </div>
+                </div>
+              </div>
+            
+            </div>
+        
+
+          
+          </div>
+          
+        </div>
+         <!-- // start absolute form -->
+
+        
+        </div>
+      </main>
+
+      <footer class="login-footer--inner">
+        <div class="footer-container text-center">
+          <p>
+            جميع الحقوق محفوظة لـ الإدارة العامة للتنفيذ
+            <span>&copy; </span> 2024
+          </p>
+          <p>صُنع بـ &#9829; في إدارة تطوير النظم - وزارة العدل</p>
+        </div>
+      </footer>
+
+
+    </div>
+
+
+
+
+
+
+
+    <script src="js/gsap.min.js"></script>
+
+    <script
+      src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+  <script>
+
+    
+const dateInputs = document.querySelectorAll('.date-input');
+console.log(dateInputs);
+dateInputs.forEach(input => {
+  input.addEventListener('click', function() {
+    
+    if (input.showPicker) {
+      input.type='date'
+      input.showPicker(); // Open date picker when input gains focus
+
+
+    }else{
+      input.type='text'
+    }
+
+
+  });
+});
+
+  
+  /**/
+  const selectElements = document.querySelectorAll('.img-select');
+
+    selectElements.forEach(select => {
+      select.addEventListener('change', function() {
+        var selectedOption = this.options[this.selectedIndex];
+        var carValue = selectedOption.value;
+        var selectImgUrl = selectedOption.getAttribute('data-img');
+        
+        var parentElement = this.parentElement;
+        var optionImg = this.nextElementSibling; 
+        if (optionImg !==null) {
+          if (carValue) {
+
+            optionImg.src = selectImgUrl;
+
+
+            optionImg.style.display = "block";
+            parentElement.classList.add("fade-in");
+
+            } else {
+            parentElement.classList.remove("fade-in");
+            optionImg.style.display = "none"; 
+
+            }
+        } else {
+
+
+          if (carValue) {
+
+           
+
+
+      
+              parentElement.classList.add("fade-in");
+
+              } else {
+              parentElement.classList.remove("fade-in");
+          
+
+              }
+
+          
+        }
+       
+
+      });
+    });
+
+
+
+
+
+  </script>
+
+
+  </body>
+</html>
