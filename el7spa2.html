@@ -281,7 +281,7 @@
       
                   </div>
                   <div class="col-md-3">
-                    <button type="button" class="btn btn-primary"><span>حفظ</span>  </button>
+                    <button type="button" class="btn btn-primary"  type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"><span>حفظ</span>  </button>
                   </div>
                 </div>
               </div>
@@ -298,6 +298,55 @@
         
         </div>
       </main>
+
+
+
+   
+        <!-- Modal -->
+        <div class="modal fade  modal--edit" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dailo-save-back">
+            <div class="modal-content ">
+              <div class="modal-header">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="#" alt="file img">
+                <h3 class="text-center text-primarytext ">هل انت متأكد من حفظ الحسبة؟</h3>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
+                <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropSave" data-bs-dismiss="modal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >حفظ   </button>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // Modal -->
+      <!-- Modal -->
+      <div class="modal fade  modal--edit" id="staticBackdropSave" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-centered--save">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title " id="exampleModalLabel"><img src="imges/E3lan_Icon.svg" alt=""> <span> تم الحفظ</span></h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="#" alt="save img">
+              <p class="text-center " >الرقم الآلي للقضية<span class="text-secondary ">9675343</span></p>
+              <h3 class="text-center text-secondary">تم حفظ الإعلان بنجاح</h3>
+              <p class="text-center">سيتم إغلاق النافذة تلقائياً بعد لحظات</p>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+      <!-- // Modal -->
+
+
+
+
 
       <footer class="login-footer--inner">
         <div class="footer-container text-center">
@@ -397,6 +446,16 @@ dateInputs.forEach(input => {
     });
 
 
+
+    // auto coosed modal
+  var SaveModal = document.getElementById('staticBackdropSave');
+  SaveModal.addEventListener('shown.bs.modal', function () {
+    setTimeout(function() {
+      
+      var modalInstance = bootstrap.Modal.getInstance(SaveModal);
+      modalInstance.hide();  
+    }, 5000);  
+  });
 
 
 

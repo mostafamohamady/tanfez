@@ -281,6 +281,19 @@ ul {
   border: none;
 }
 
+.form-control-inbtn--save{
+  min-width: 140px;
+}
+.form-control-inbtn--coopy{
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  padding: 8px 6px;
+
+}
+
 /*buttons*/
 /*title with line*/
 
@@ -700,6 +713,24 @@ ul {
     background-color: transparent;
   }
 }
+.head-line--II{
+ margin-bottom: 80px;
+  
+  .head-title--section {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ebf0f6;
+    span{
+      background-color: #ebf0f6;
+    }
+  }
+
+}
+
+
+
 
 /*search result  page */
 
@@ -966,6 +997,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .form-control--amount {
   background-image: url("../imges/Group 107994.svg");
+  
   background-repeat: no-repeat;
   background-position: calc(100% - 20px) center;
   background-size: 28px 28px;
@@ -1008,6 +1040,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     }
   }
 }
+
+.form-control--civiId{
+  background-image: url("../imges/Group 107857.svg");
+  text-align: right;
+}
+.form-control--ipan{
+  
+  background-image: url("../imges/Group 107845.svg");
+  text-align: right;
+}
+
+
 
 /* switch btn */
 .switch-container {
@@ -1175,6 +1219,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .modal-dialog {
     max-width: 900px;
   }
+  .modal-dialog-centered--save{
+    max-width: 500px;
+  }
+  .modal-dailo-save-back{
+    max-width: 500px;
+  }
+  .modal-dialog-update-data{
+    max-width: 750px;
+  }
+
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

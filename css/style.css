@@ -278,6 +278,19 @@ ul {
   border: none;
 }
 
+.form-control-inbtn--save {
+  min-width: 140px;
+}
+
+.form-control-inbtn--coopy {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.9rem;
+  padding: 8px 6px;
+}
+
 /*buttons*/
 /*title with line*/
 .text--vline {
@@ -651,6 +664,20 @@ ul {
   background-color: transparent;
 }
 
+.head-line--II {
+  margin-bottom: 80px;
+}
+.head-line--II .head-title--section {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ebf0f6;
+}
+.head-line--II .head-title--section span {
+  background-color: #ebf0f6;
+}
+
 /*search result  page */
 /*table*/
 .table--edit {
@@ -936,6 +963,16 @@ input[type=date]::-webkit-calendar-picker-indicator {
   font-weight: 400;
 }
 
+.form-control--civiId {
+  background-image: url("../imges/Group 107857.svg");
+  text-align: right;
+}
+
+.form-control--ipan {
+  background-image: url("../imges/Group 107845.svg");
+  text-align: right;
+}
+
 /* switch btn */
 .switch-container {
   display: inline-block;
@@ -1087,5 +1124,14 @@ input[type=date]::-webkit-calendar-picker-indicator {
 @media (min-width: 1200px) {
   .modal-dialog {
     max-width: 900px;
+  }
+  .modal-dialog-centered--save {
+    max-width: 500px;
+  }
+  .modal-dailo-save-back {
+    max-width: 500px;
+  }
+  .modal-dialog-update-data {
+    max-width: 750px;
   }
 }/*# sourceMappingURL=style.css.map */

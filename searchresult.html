@@ -168,14 +168,14 @@
                           <td>288102204455</td>
                           <td><img  src="imges/kuwait.svg" alt="flag"><span>كويتي</span> </td>
                           <td>طبيعي</td>
-                          <td><a href="#" class="text-secondary"> <img src="imges/Group 107845.svg" alt=""><span>عرض</span></a></td>
+                          <td><a href="#" class="text-secondary" type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropIpab" > <img src="imges/Group 107845.svg" alt=""><span  >عرض</span></a></td>
                           <td>
                             <div class="dropdown-center dropdown-center--edit">
                               <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                <img class="m-0" src="imges/Icon akar-more-vertical.svg" alt="">
                               </button>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
+                                <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdropUdate"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
                                 <li><a class="dropdown-item" href="#"><img src="imges/Group 107845.svg" alt=""> <span>تحديث رقم الآيبان</span> </a></li>
                              
                               </ul>
@@ -198,7 +198,7 @@
                                <img class="m-0" src="imges/Icon akar-more-vertical.svg" alt="">
                               </button>
                               <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
+                                <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdropUdate"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
                                 <li><a class="dropdown-item" href="#"><img src="imges/Group 107845.svg" alt=""> <span>تحديث رقم الآيبان</span> </a></li>
                              
                               </ul>
@@ -206,35 +206,13 @@
                         
                         </td>
                         </tr>
-                        <tr>
-                        
-                          <td>1</td>
-                          <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
-                          <td><span>مدعي</span></td>
-                          <td>288102204455</td>
-                          <td><img  src="imges/kuwait.svg" alt="flag"><span>كويتي</span> </td>
-                          <td>طبيعي</td>
-                          <td><a href="#" class="text-secondary"> <img src="imges/Group 107845.svg" alt=""><span>عرض</span></a></td>
-                          <td>
-                            <div class="dropdown-center dropdown-center--edit">
-                              <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                               <img class="m-0" src="imges/Icon akar-more-vertical.svg" alt="">
-                              </button>
-                              <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
-                                <li><a class="dropdown-item" href="#"><img src="imges/Group 107845.svg" alt=""> <span>تحديث رقم الآيبان</span> </a></li>
-                             
-                              </ul>
-                            </div>
-                        
-                        </td>
-                        </tr>
+                    
                      
                      
                        
                       </tbody>
                     </table>
-                      
+
 
 
 
@@ -264,7 +242,7 @@
 
 
 
-<!-- Modal -->
+<!-- Modal open file -->
 <div class="modal fade  modal--edit" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -273,7 +251,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="#">
+      <form action="#" id="openFileForm">
         <h3 class="text-center">فتح ملف تنفيد</h3>
         <p class="text-center " >الرقم الآلي للقضية <span class="text-secondary ">9675343</span></p>
         <div class="frm-box">
@@ -328,12 +306,220 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
-        <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#exampleModal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
+        <button id="btnOpenFileModal" class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropConfirm"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
 
       </div>
     </div>
   </div>
 </div>
+<!-- // Modal -->
+
+<!-- Modal update data -->
+<div class="modal fade  modal--edit" id="staticBackdropUdate" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-update-data">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel"><img src="imges/Group 107863.svg" alt=""> <span> تحديث بيانات</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="#">
+        <div class="text-center">
+          <img class="" src="imges/Mask Group 1.png" alt="user img">
+        </div>
+        
+
+        <h2 class="text-center">ياسر محمد أحمد</h2>
+        <p class="text-center " ><span class="text-secondary mx-2">مدعي</span><img src="imges/kuwait.svg" alt="flag"> <span class="text-primarytext ">كويتي</span></p>
+        <div class="frm-box">
+          <div class="row mb-2">
+            <div class="col-12">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control form-control--amount form-control--civiId" id="floatingInputc" placeholder="">
+                <label for="floatingInput " class=" floatingInput--amount">الرقم المدني</label>
+              </div>
+
+            </div>
+            <div class="col-12">
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control form-control--amount form-control--ipan  " id="floatingInputc" placeholder="">
+                <label for="floatingInput " class=" floatingInput--amount">رقم الآيبان</label>
+              </div>
+
+            </div>
+          </div>
+         
+
+         <div class="text-center">
+
+          <button class="btn btn-primary form-control-inbtn form-control-inbtn--save   px-3 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropSave" data-bs-dismiss="modal"> حفظ  </button>
+         </div>
+
+        </div>
+
+
+
+      </form>
+        
+      </div>
+    
+    </div>
+  </div>
+</div>
+<!-- // Modal -->
+
+
+
+ <!-- Modal -- saved  -->
+ <div class="modal fade  modal--edit" id="staticBackdropSave" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-centered--save">
+    <div class="modal-content">
+      <div class="modal-header">
+        <!-- <h5 class="modal-title " id="exampleModalLabel"><img src="imges/E3lan_Icon.svg" alt=""> <span> تم الحفظ</span></h5> -->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="text-center">
+        <img class="" src="imges/Mask Group 1.png" alt="user img">
+      </div>
+      
+
+      <h3 class="text-center">ياسر محمد أحمد</h3>
+      <p class="text-center " ><span class="text-secondary mx-2">مدعي</span><img src="imges/kuwait.svg" alt="flag"> <span class="text-primarytext ">كويتي</span></p>
+      <div class="modal-body text-center">
+      <img src="#" alt="save img">
+        <h3 class="text-center text-secondary mt-2">تم حفظ البيانات  بنجاح</h3>
+        <p class="text-center">سيتم إغلاق النافذة تلقائياً بعد لحظات</p>
+      </div>
+     
+    </div>
+  </div>
+</div>
+<!-- // Modal  saved-->
+
+
+<!-- Modal Show Iban -->
+<div class="modal fade  modal--edit" id="staticBackdropIpab" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!-- <div class="alert alert-warning alert-dismissible fade " role="alert" id="myAlert">
+    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div> -->
+  
+  <div class="modal-dialog modal-dialog-centered modal-dialog-update-data">
+   
+    <div class="modal-content">
+     
+
+      <div class="modal-header">
+        <h5 class="modal-title " id="exampleModalLabel"><img src="imges/Group 107845.svg" alt=""> <span> رقم الآيبان</span></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+      <form action="#">
+        <div class="text-center">
+          <img class="" src="imges/Mask Group 1.png" alt="user img">
+        </div>
+        
+
+        <h2 class="text-center">ياسر محمد أحمد</h2>
+        <p class="text-center " ><span class="text-secondary mx-2">مدعي</span><img src="imges/kuwait.svg" alt="flag"> <span class="text-primarytext ">كويتي</span></p>
+        <div class="frm-box">
+          <div class="row mb-2">
+        
+            <div class="col-12">
+              <div class="form-floating mb-3">
+                <input type="text" disabled  value="KW61 NBOK 0000 0000 0000 1234 5678 90" class="form-control form-control--amount form-control--ipan  " id="floatingInputc" placeholder="">
+                <label for="floatingInput " class=" floatingInput--amount">رقم الآيبان</label>
+                <button id="copyBtn" class="btn btn-primary form-control-inbtn form-control-inbtn--coopy  px-3 " type="button " > نسخ <img class="mx-2" src="imges/Group 107911.svg" alt="open file tanfiz" >   </button> 
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+    </div>
+  </div>
+ 
+
+
+</div>
+<!-- // Modal -->
+
+ <!-- Modal confirmation  message -->
+ <div class="modal fade  modal--edit" id="staticBackdropConfirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dailo-save-back">
+    <div class="modal-content ">
+      <div class="modal-header">
+        
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="#" alt="file img">
+        <h3 class="text-center text-primarytext ">هل أنت متأكد من فتح الملف للتنفيذ؟</h3>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
+        <button class="btn btn-primary form-control-inbtn  px-3 btn-close-file-opend " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropFileOpen" data-bs-dismiss="modal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" > نعم، فتح ملف تنفيذ</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- // Modal -->
+
+
+      <!-- Modal file opend -->
+      <div class="modal fade  modal--edit" id="staticBackdropFileOpen" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5 class="modal-title " id="exampleModalLabel"><img src="imges/E3lan_Icon.svg" alt=""> <span> تم الحفظ</span></h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <img src="#" alt="save img">
+              <h3 class="text-center text-secondary">تم فتح الملف بنجاح</h3>
+              <p class="text-center " >الرقم الآلي للقضية<span class="text-secondary px-2 ">9675343</span></p>
+              <div class="frm-box">
+
+                          
+                  <div class="row mb-3 text-start">
+                    <div class="col-12 "><img src="imges/Path 67658.svg" alt=""> <label for="">تاريخ فتح الملف</label> <span class="text-secondary mx-2">17-09-2024</span></div>
+                   
+                    
+                  </div>  
+                  <div class="row mb-2 text-start mb-3">
+                   
+                    <div class="col-12  "><img src="imges/Group 107920.svg" alt=""> <label for="">المحافظة</label> <span class="text-secondary mx-2">العاصمة</span></div>
+                  
+                  </div>  
+                  <div class="row mb-2 text-start mb-3">
+                   
+                    <div class="col-12  "><img src="imges/Group 107872.svg" alt=""> <label for="">القسم المنشأ للملف</label> <span class="text-secondary mx-2">إدارة تنفيذ العاصمة</span></div>
+                  
+                  </div>  
+                  <div class="row mb-2 text-start mb-3">
+                   
+                    <div class="col-12  "><img src="imges/Group 107870.svg" alt=""> <label for="">رقم الملف</label> <span class="text-secondary mx-2">976324</span></div>
+                  
+                  </div>  
+                 
+
+               </div>
+            
+            
+          
+
+            </div>
+          
+          </div>
+        </div>
+      </div>
+      <!-- // Modal -->
+
+
 
 
 
@@ -349,16 +535,55 @@
   <script>
 
     
-const dateInputs = document.querySelectorAll('.date-input');
-console.log(dateInputs);
-dateInputs.forEach(input => {
-  input.addEventListener('click', function() {
-    console.log('Focus event triggered');
-    if (input.showPicker) {
-      input.showPicker(); // Open date picker when input gains focus
-    }
-  });
-});
+    const dateInputs = document.querySelectorAll('.date-input');
+    
+    dateInputs.forEach(input => {
+      input.addEventListener('click', function() {
+        console.log('Focus event triggered');
+        if (input.showPicker) {
+          input.showPicker(); // Open date picker when input gains focus
+        }
+      });
+    });
+
+
+        // auto coosed modal
+          var SaveModal = document.getElementById('staticBackdropSave');
+          SaveModal.addEventListener('shown.bs.modal', function () {
+            setTimeout(function() {
+              
+              var modalInstance = bootstrap.Modal.getInstance(SaveModal);
+              modalInstance.hide();  
+            }, 5000);  
+          });
+
+          
+       
+        
+          var secondModal = document.getElementById('staticBackdrop');
+          var cFileOpendModal=document.querySelector('.btn-close-file-opend');
+
+          cFileOpendModal.addEventListener('click', function () {
+            var firstModalInstance = bootstrap.Modal.getInstance(secondModal);
+            firstModalInstance.hide();
+           openFileForm.reset();
+
+          });
+          var openFileForm = document.getElementById('openFileForm');
+          var btnOpenFileModal = document.getElementById('btnOpenFileModal');
+          cFileOpendModal.addEventListener('click', function () {
+          
+           openFileForm.reset();
+
+          });
+
+      
+         
+          
+
+  
+   
+
   </script>
 
 
