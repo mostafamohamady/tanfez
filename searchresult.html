@@ -191,7 +191,7 @@
                           <td>288102204455</td>
                           <td><img  src="imges/kuwait.svg" alt="flag"><span>كويتي</span> </td>
                           <td>طبيعي</td>
-                          <td><a href="#" class="text-secondary"> <img src="imges/Group 107845.svg" alt=""><span>عرض</span></a></td>
+                          <td><a href="#" class="text-secondary" type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropIpab" > <img src="imges/Group 107845.svg" alt=""><span  >عرض</span></a></td>
                           <td>
                             <div class="dropdown-center dropdown-center--edit">
                               <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -206,6 +206,30 @@
                         
                         </td>
                         </tr>
+                        <tr>
+                        
+                          <td>1</td>
+                          <td ><img src="imges/Mask Group 1.svg" alt="img"><span>ياسر محمد أحمد </span></td>
+                          <td><span>مدعي</span></td>
+                          <td>288102204455</td>
+                          <td><img  src="imges/kuwait.svg" alt="flag"><span>كويتي</span> </td>
+                          <td>طبيعي</td>
+                          <td><a href="#" class="text-secondary" type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropIpab" > <img src="imges/Group 107845.svg" alt=""><span  >عرض</span></a></td>
+                          <td>
+                            <div class="dropdown-center dropdown-center--edit">
+                              <button class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                               <img class="m-0" src="imges/Icon akar-more-vertical.svg" alt="">
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#"  data-bs-toggle="modal" data-bs-target="#staticBackdropUdate"> <img src="imges/Group 96757.svg" alt=""> <span>تحديث الرقم المدني</span></a></li>
+                                <li><a class="dropdown-item" href="#"><img src="imges/Group 107845.svg" alt=""> <span>تحديث رقم الآيبان</span> </a></li>
+                             
+                              </ul>
+                            </div>
+                        
+                        </td>
+                        </tr>
+                     
                     
                      
                      
@@ -404,8 +428,23 @@
     <strong>Holy guacamole!</strong> You should check in on some of those fields below.
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div> -->
-  
+  <!-- Feedback Message -->
+
   <div class="modal-dialog modal-dialog-centered modal-dialog-update-data">
+    <div id="copyMessage" class="modal__copy-message" >
+      <div class="d-flex copy-message__container ">
+        <div class="modal__copy-message-icon">
+        <img src="imges/Calendar_Icon.svg" alt="">
+    
+         </div>
+        <span>تم نسخ الآيبان بنجاح</span>
+
+        <button type="button" class="btn-close-copy-message" > <img src="imges/Path 63126.svg" alt="close done message"></button>
+
+     
+      </div>
+
+    </div>
    
     <div class="modal-content">
      
@@ -428,9 +467,9 @@
         
             <div class="col-12">
               <div class="form-floating mb-3">
-                <input type="text" disabled  value="KW61 NBOK 0000 0000 0000 1234 5678 90" class="form-control form-control--amount form-control--ipan  " id="floatingInputc" placeholder="">
+                <input type="text" disabled  value="KW61 NBOK 0000 0000 0000 1234 5678 90" class="form-control form-control--amount form-control--ipan  " id="ibanInput" placeholder="">
                 <label for="floatingInput " class=" floatingInput--amount">رقم الآيبان</label>
-                <button id="copyBtn" class="btn btn-primary form-control-inbtn form-control-inbtn--coopy  px-3 " type="button " > نسخ <img class="mx-2" src="imges/Group 107911.svg" alt="open file tanfiz" >   </button> 
+                <button  id="copyBtn" class="btn btn-primary form-control-inbtn form-control-inbtn--coopy  px-3 " type="button " > نسخ <img class="mx-2" src="imges/Group 107911.svg" alt="open file tanfiz" >   </button> 
               </div>
 
             </div>
@@ -446,28 +485,28 @@
 </div>
 <!-- // Modal -->
 
- <!-- Modal confirmation  message -->
- <div class="modal fade  modal--edit" id="staticBackdropConfirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dailo-save-back">
-    <div class="modal-content ">
-      <div class="modal-header">
-        
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body text-center">
-        <img src="#" alt="file img">
-        <h4 class="text-center text-primarytext ">هل أنت متأكد من فتح الملف للتنفيذ؟</h4>
-        
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
-        <button class="btn btn-primary form-control-inbtn  px-3 btn-close-file-opend " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropFileOpen" data-bs-dismiss="modal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" > نعم، فتح ملف تنفيذ</button>
+        <!-- Modal confirmation  message -->
+        <div class="modal fade  modal--edit" id="staticBackdropConfirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dailo-save-back">
+            <div class="modal-content ">
+              <div class="modal-header">
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-center">
+                <img src="#" alt="file img">
+                <h4 class="text-center text-primarytext ">هل أنت متأكد من فتح الملف للتنفيذ؟</h4>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
+                <button class="btn btn-primary form-control-inbtn  px-3 btn-close-file-opend " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropFileOpen" data-bs-dismiss="modal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" > نعم، فتح ملف تنفيذ</button>
 
-      </div>
-    </div>
-  </div>
-</div>
-<!-- // Modal -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- // Modal -->
 
 
       <!-- Modal file opend -->
@@ -546,7 +585,7 @@
       });
     });
 
-
+        ////////////////////////////////////////////////////////////////
         // auto coosed modal
           var SaveModal = document.getElementById('staticBackdropSave');
           SaveModal.addEventListener('shown.bs.modal', function () {
@@ -559,7 +598,7 @@
 
           
        
-        
+        ////////////////////////////////////////////////////////////////
           var secondModal = document.getElementById('staticBackdrop');
           var cFileOpendModal=document.querySelector('.btn-close-file-opend');
 
@@ -578,7 +617,29 @@
           });
 
       
-         
+
+
+
+           // Get references to the input field, button, and message
+            var copyBtn = document.getElementById('copyBtn');
+            var ibanInput = document.getElementById('ibanInput');
+            var copyMessage = document.getElementById('copyMessage');
+
+            // Add click event listener to the button
+            copyBtn.addEventListener('click', function() {
+              // Copy the input text value to the clipboard
+              navigator.clipboard.writeText(ibanInput.value).then(function() {
+                // Show confirmation message
+                copyMessage.style.display = 'block';
+
+                // Hide the message after 2 seconds
+                setTimeout(function() {
+                  copyMessage.style.display = 'none';
+                }, 2000);
+              }).catch(function(error) {
+                console.error('Failed to copy text: ', error);
+              });
+            });
           
 
   

@@ -281,17 +281,16 @@ ul {
   border: none;
 }
 
-.form-control-inbtn--save{
+.form-control-inbtn--save {
   min-width: 140px;
 }
-.form-control-inbtn--coopy{
+.form-control-inbtn--coopy {
   position: absolute;
   left: 6px;
   top: 50%;
   transform: translateY(-50%);
   font-size: 0.9rem;
   padding: 8px 6px;
-
 }
 
 /*buttons*/
@@ -713,24 +712,20 @@ ul {
     background-color: transparent;
   }
 }
-.head-line--II{
- margin-bottom: 80px;
-  
+.head-line--II {
+  margin-bottom: 80px;
+
   .head-title--section {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translateY(-50%);
     background-color: #ebf0f6;
-    span{
+    span {
       background-color: #ebf0f6;
     }
   }
-
 }
-
-
-
 
 /*search result  page */
 
@@ -997,7 +992,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .form-control--amount {
   background-image: url("../imges/Group 107994.svg");
-  
+
   background-repeat: no-repeat;
   background-position: calc(100% - 20px) center;
   background-size: 28px 28px;
@@ -1041,17 +1036,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
-.form-control--civiId{
+.form-control--civiId {
   background-image: url("../imges/Group 107857.svg");
   text-align: right;
 }
-.form-control--ipan{
-  
+.form-control--ipan {
   background-image: url("../imges/Group 107845.svg");
   text-align: right;
 }
-
-
 
 /* switch btn */
 .switch-container {
@@ -1170,6 +1162,41 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   }
 }
 
+.modal__copy-message {
+  display: none;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999999;
+  background-color: #d6e0d0;
+  border: solid 1px #bacb99;
+  color: #5b7749;
+  border-radius: 40px;
+  padding: 10px 20px;
+
+  .modal__copy-message-icon {
+    margin-inline-end: 10px;
+    height: 50px;
+    width: 50px;
+    background-color: #DEE6DC;
+    border-radius: 50%;
+    img{
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  .btn-close-copy-message {
+    margin-inline-start: 10px;
+    background: transparent;
+    border: none;
+  }
+  .copy-message__container{
+     align-items: center;
+  }
+}
+
 /*//modal*/
 
 /****************************** media *******************************/
@@ -1219,16 +1246,15 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .modal-dialog {
     max-width: 900px;
   }
-  .modal-dialog-centered--save{
+  .modal-dialog-centered--save {
     max-width: 500px;
   }
-  .modal-dailo-save-back{
+  .modal-dailo-save-back {
     max-width: 500px;
   }
-  .modal-dialog-update-data{
+  .modal-dialog-update-data {
     max-width: 750px;
   }
-
 }
 
 // XX-Large devices (larger desktops, 1400px and up)

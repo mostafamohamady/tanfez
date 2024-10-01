@@ -1087,6 +1087,40 @@ input[type=date]::-webkit-calendar-picker-indicator {
   transform: translateY(-50%);
 }
 
+.modal__copy-message {
+  display: none;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999999;
+  background-color: #d6e0d0;
+  border: solid 1px #bacb99;
+  color: #5b7749;
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+.modal__copy-message .modal__copy-message-icon {
+  margin-inline-end: 10px;
+  height: 50px;
+  width: 50px;
+  background-color: #DEE6DC;
+  border-radius: 50%;
+}
+.modal__copy-message .modal__copy-message-icon img {
+  width: 100%;
+  padding: 10px;
+}
+.modal__copy-message .btn-close-copy-message {
+  margin-inline-start: 10px;
+  background: transparent;
+  border: none;
+}
+.modal__copy-message .copy-message__container {
+  align-items: center;
+}
+
 /*//modal*/
 /****************************** media *******************************/
 @media (max-width: 576px) {
