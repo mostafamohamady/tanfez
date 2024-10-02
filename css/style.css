@@ -1121,6 +1121,10 @@ input[type=date]::-webkit-calendar-picker-indicator {
   align-items: center;
 }
 
+.alert-success-icon {
+  width: 150px;
+}
+
 /*//modal*/
 /****************************** media *******************************/
 @media (max-width: 576px) {

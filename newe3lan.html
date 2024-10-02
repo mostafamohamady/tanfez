@@ -355,7 +355,11 @@
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center">
-                  <img src="#" alt="file img">
+                  <!-- animation icon -->
+                  <div class=" d-flex justify-content-center">
+                    <div id="noteIcon" class="alert-note-icon"></div>
+                  </div>
+                  <!-- // animation icon -->
                   <h3 class="text-center text-primarytext h4 ">هل أنت متأكد من إرسال الإعلانات؟</h3>
                   
                 </div>
@@ -377,7 +381,11 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body text-center">
-                <img src="#" alt="save img">
+                  <!-- animation  icon-->
+                <div class=" d-flex justify-content-center">
+                  <div id="successIcon" class="alert-success-icon"></div>
+                </div>
+                <!-- animation icon -->
                 <h3 class="text-center text-secondary">تم إرسال الإعلانات بنجاح</h3>
                 <p class="text-center " >الرقم الآلي للقضية<span class="text-secondary ">9675343</span></p>
                 <div class="frm-box">
@@ -468,12 +476,34 @@
 
     <script src="js/gsap.min.js"></script>
 
-    <script
-      src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script src="js/main.js"></script>
 
 
+
+
     <script>
+
+
+    // Create animation icon
+    bodymovin.loadAnimation({
+          container: document.getElementById('noteIcon'),
+          path: 'imges/MOJ_Tanfez_V1_Alert.json',
+          
+          loop: true,
+          autoplay: true,
+            });
+          bodymovin.loadAnimation({
+          container: document.getElementById('successIcon'),
+          path: 'imges/MOJ_Tanfez_V1_Success.json',
+          
+          loop: true,
+          autoplay: true,
+            });
+    //  animation icon
+
+
         const dateInputs = document.querySelectorAll('.date-input');
         console.log(dateInputs);
         dateInputs.forEach(input => {
