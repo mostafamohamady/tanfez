@@ -91,8 +91,10 @@
 
                     </div>
                     <div class="col-md-6 text-end">
-                      <!-- Button trigger modal -->
+                      <!-- Button trigger modal open file -->
                       <button class="btn btn-primary form-control-inbtn  px-3 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdrop"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >فتح ملف تنفيذ   </button>
+                      <!-- Button trigger modal open file -->
+                      <button class="btn btn-primary form-control-inbtn form-control-inbtn--fileopend   px-3 " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropError"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" >تم فتح هذا الملف مسبقاً  </button>
 
                     </div>
                   </div>
@@ -412,9 +414,12 @@
       <p class="text-center " ><span class="text-secondary mx-2">مدعي</span><img src="imges/kuwait.svg" alt="flag"> <span class="text-primarytext ">كويتي</span></p>
       <div class="modal-body text-center">
          <!-- animation  icon-->
+         
          <div class=" d-flex justify-content-center">
-          <div id="successIcon" class="alert-success-icon"></div>
-        </div>
+                    
+          <img  class="modal__animation-icon-success" src="imges/MOJ_Tanfez_V1_Success.gif"  alt="" srcset="">
+          
+          </div>
         <!-- animation icon -->
         <h3 class="text-center text-secondary mt-2">تم حفظ البيانات  بنجاح</h3>
         <p class="text-center">سيتم إغلاق النافذة تلقائياً بعد لحظات</p>
@@ -426,68 +431,68 @@
 <!-- // Modal  saved-->
 
 
-<!-- Modal Show Iban -->
-<div class="modal fade  modal--edit" id="staticBackdropIpab" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <!-- <div class="alert alert-warning alert-dismissible fade " role="alert" id="myAlert">
-    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-  </div> -->
-  <!-- Feedback Message -->
+        <!-- Modal Show Iban -->
+        <div class="modal fade  modal--edit" id="staticBackdropIpab" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <!-- <div class="alert alert-warning alert-dismissible fade " role="alert" id="myAlert">
+            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div> -->
+          <!-- Feedback Message -->
 
-  <div class="modal-dialog modal-dialog-centered modal-dialog-update-data">
-    <div id="copyMessage" class="modal__copy-message" >
-      <div class="d-flex copy-message__container ">
-        <div class="modal__copy-message-icon">
-        <img src="imges/Calendar_Icon.svg" alt="">
-    
-         </div>
-        <span>تم نسخ الآيبان بنجاح</span>
+          <div class="modal-dialog modal-dialog-centered modal-dialog-update-data">
+            <div id="copyMessage" class="modal__copy-message" >
+              <div class="d-flex copy-message__container ">
+                <div class="modal__copy-message-icon">
+                <img src="imges/Calendar_Icon.svg" alt="">
+            
+                </div>
+                <span>تم نسخ الآيبان بنجاح</span>
 
-        <button type="button" class="btn-close-copy-message" > <img src="imges/Path 63126.svg" alt="close done message"></button>
+                <button type="button" class="btn-close-copy-message" > <img src="imges/Path 63126.svg" alt="close done message"></button>
 
-     
-      </div>
-
-    </div>
-   
-    <div class="modal-content">
-     
-
-      <div class="modal-header">
-        <h5 class="modal-title " id="exampleModalLabel"><img src="imges/Group 107845.svg" alt=""> <span> رقم الآيبان</span></h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-      <form action="#">
-        <div class="text-center">
-          <img class="" src="imges/Mask Group 1.png" alt="user img">
-        </div>
-        
-
-        <h2 class="text-center">ياسر محمد أحمد</h2>
-        <p class="text-center " ><span class="text-secondary mx-2">مدعي</span><img src="imges/kuwait.svg" alt="flag"> <span class="text-primarytext ">كويتي</span></p>
-        <div class="frm-box">
-          <div class="row mb-2">
-        
-            <div class="col-12">
-              <div class="form-floating mb-3">
-                <input type="text" disabled  value="KW61 NBOK 0000 0000 0000 1234 5678 90" class="form-control form-control--amount form-control--ipan  " id="ibanInput" placeholder="">
-                <label for="floatingInput " class=" floatingInput--amount">رقم الآيبان</label>
-                <button  id="copyBtn" class="btn btn-primary form-control-inbtn form-control-inbtn--coopy  px-3 " type="button " > نسخ <img class="mx-2" src="imges/Group 107911.svg" alt="open file tanfiz" >   </button> 
+            
               </div>
 
             </div>
+          
+            <div class="modal-content">
+            
+
+              <div class="modal-header">
+                <h5 class="modal-title " id="exampleModalLabel"><img src="imges/Group 107845.svg" alt=""> <span> رقم الآيبان</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <form action="#">
+                <div class="text-center">
+                  <img class="" src="imges/Mask Group 1.png" alt="user img">
+                </div>
+                
+
+                <h2 class="text-center">ياسر محمد أحمد</h2>
+                <p class="text-center " ><span class="text-secondary mx-2">مدعي</span><img src="imges/kuwait.svg" alt="flag"> <span class="text-primarytext ">كويتي</span></p>
+                <div class="frm-box">
+                  <div class="row mb-2">
+                
+                    <div class="col-12">
+                      <div class="form-floating mb-3">
+                        <input type="text" disabled  value="KW61 NBOK 0000 0000 0000 1234 5678 90" class="form-control form-control--amount form-control--ipan  " id="ibanInput" placeholder="">
+                        <label for="floatingInput " class=" floatingInput--amount">رقم الآيبان</label>
+                        <button  id="copyBtn" class="btn btn-primary form-control-inbtn form-control-inbtn--coopy  px-3 " type="button " > نسخ <img class="mx-2" src="imges/Group 107911.svg" alt="open file tanfiz" >   </button> 
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+              </div>
+            </div>
           </div>
+        
+
+
         </div>
-      </form>
-      </div>
-    </div>
-  </div>
- 
-
-
-</div>
-<!-- // Modal -->
+        <!-- // Modal -->
 
         <!-- Modal confirmation  message -->
         <div class="modal fade  modal--edit" id="staticBackdropConfirm" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -499,9 +504,12 @@
               </div>
               <div class="modal-body text-center">
                 <!-- animation icon -->
+                 
                 <div class=" d-flex justify-content-center">
-                  <div id="noteIcon" class="alert-note-icon"></div>
-                </div>
+                    
+                  <img  class="modal__animation-icon-alert" src="imges/MOJ_Tanfez_V1_Alert.gif"  alt="" srcset="">
+                  
+                  </div>
                 <!-- // animation icon -->
                 <h4 class="text-center text-primarytext ">هل أنت متأكد من فتح الملف للتنفيذ؟</h4>
                 
@@ -527,9 +535,12 @@
             </div>
             <div class="modal-body text-center">
                  <!-- animation  icon-->
-                 <div class=" d-flex justify-content-center">
-                  <div id="successIcon" class="alert-success-icon"></div>
-                </div>
+                  
+                <div class=" d-flex justify-content-center">
+                    
+                  <img  class="modal__animation-icon-success" src="imges/MOJ_Tanfez_V1_Success.gif"  alt="" srcset="">
+                  
+                  </div>
                 <!-- animation icon -->
               <h3 class="text-center text-secondary">تم فتح الملف بنجاح</h3>
               <p class="text-center " >الرقم الآلي للقضية<span class="text-secondary px-2 ">9675343</span></p>
@@ -570,6 +581,37 @@
       </div>
       <!-- // Modal -->
 
+       <!-- Modal error  message -->
+       <div class="modal fade  modal--edit" id="staticBackdropError" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dailo-save-back">
+          <div class="modal-content ">
+            <div class="modal-header">
+              
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+              <!-- animation icon -->
+               
+              <div class=" d-flex justify-content-center">
+                  
+                <img  class="modal__animation-icon-alert" src="imges/MOJ_Tanfez_V1_Error.gif"  alt="" srcset="">
+                
+                </div>
+              <!-- // animation icon -->
+              <h4 class="text-center text-primarytext mb-2 ">تم فتح هذا الملف مسبقا</h4>
+              <p class="text-center " >بتاريخ <span class="text-secondary ">الأربعاء، 2 أكتوبر 2024</span></p>
+              
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary btn-back" data-bs-dismiss="modal">عودة</button>
+              <button class="btn btn-primary form-control-inbtn  px-3 btn-close-file-opend " type="button " data-bs-toggle="modal" data-bs-target="#staticBackdropFileOpen" data-bs-dismiss="modal"> <img class="mx-2" src="imges/openfile.svg" alt="open file tanfiz" > نعم، فتح ملف تنفيذ</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- // Modal -->
+
 
 
 
@@ -579,7 +621,6 @@
     <script src="js/gsap.min.js"></script>
 
     <script  src="js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 
     <script src="js/main.js"></script>
 
@@ -587,22 +628,6 @@
   <script>
 
 
-      // Create animation icon
-      bodymovin.loadAnimation({
-                container: document.getElementById('noteIcon'),
-                path: 'imges/MOJ_Tanfez_V1_Alert.json',
-                
-                loop: true,
-                autoplay: true,
-                  });
-                bodymovin.loadAnimation({
-                container: document.getElementById('successIcon'),
-                path: 'imges/MOJ_Tanfez_V1_Success.json',
-                
-                loop: true,
-                autoplay: true,
-                  });
-          //  animation icon
 
 
     

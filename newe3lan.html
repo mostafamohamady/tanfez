@@ -315,7 +315,7 @@
 
                         <div class="label">
                           <p>حور احمد كامل الفضلي3</p>
-                          <span >+2 عرض</span>
+                          <span type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropPartisToCase" >+2 عرض</span>
                         </div>
                        
                       
@@ -356,12 +356,12 @@
                 </div>
                 <div class="modal-body text-center">
                   <!-- animation icon -->
-                    cccccc
-                  <img src="imges/MOJ_Tanfez_V1_Success.gif" style="width: 200px;" alt="" srcset="">
-                  <!-- <div class=" d-flex justify-content-center">
+                 
+                  <div class=" d-flex justify-content-center">
                     
-                    <div id="noteIcon" class="alert-note-icon"></div>
-                  </div> -->
+                  <img  class="modal__animation-icon-alert" src="imges/MOJ_Tanfez_V1_Alert.gif"  alt="" srcset="">
+                  
+                  </div>
 
 
                   <!-- // animation icon -->
@@ -388,7 +388,12 @@
               <div class="modal-body text-center">
                   <!-- animation  icon-->
                 <div class=" d-flex justify-content-center">
-                  <div id="successIcon" class="alert-success-icon"></div>
+                   
+                  <div class=" d-flex justify-content-center">
+                    
+                    <img  class="modal__animation-icon-success" src="imges/MOJ_Tanfez_V1_Success.gif"  alt="" srcset="">
+                    
+                    </div>
                 </div>
                 <!-- animation icon -->
                 <h3 class="text-center text-secondary">تم إرسال الإعلانات بنجاح</h3>
@@ -456,6 +461,86 @@
         </div>
         <!-- // Modal -->
 
+
+    <!-- Modal Prties to the case -->
+        <div class="modal fade  modal--edit" id="staticBackdropPartisToCase" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title " id="exampleModalLabel"><img src="imges/Group 108076.svg" alt=""> <span> أطراف القضية رقم 9675343</span></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="parties-case">
+                  <div class="row">
+                      <div class="col-md-6">
+                        <div class="bx bx-bga">
+                          <div class=" head-line  my-2 "><span class="text-secondary  head-title--section head-title--section-bga ">المدعي</span> </div>
+                          <div class="bx__list">
+                            <div class="bx__item-l">
+                              <div class="bx__item-icon"><img src="imges/Mask Group 117.svg" alt=""></div>
+                              <div class="bx__item-text mx-2">محمد خالد عبدالله</div>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="bx bx-bgb">
+                          <div class=" head-line  my-2 "><span class="text-secondary  head-title--section head-title--section-bgb ">المدعى عليه</span> </div>
+                          <div class="bx__item-r">
+                             
+                            <ul class="numbered-list numbered-list--respondent">
+                              <li class=" mb-2" >
+                                <div class="bx__item-userimg">
+                                  <img src="imges/Mask Group 119.svg" alt="">
+                                </div>
+                                <div class="bx__item-text">
+                                  <h6>حور احمد كامل الفضلي</h6>
+                                  <p>منع سفر</p>
+                                  <p>منع سفر</p>
+                                </div>
+                              </li>
+                              <li  class=" mb-2">
+                                <div class="bx__item-userimg">
+                                  <img src="imges/Mask Group 119.svg" alt="">
+                                </div>
+                                <div class="bx__item-text">
+                                  <h6>حور احمد كامل الفضلي</h6>
+                                  <p>منع سفر</p>
+                                  <p>منع سفر</p>
+                                  <p>منع سفر</p>
+                                  <p>منع سفر</p>
+                                </div>
+                              </li>
+                              <li  class=" mb-2">
+                                <div class="bx__item-userimg">
+                                  <img src="imges/Mask Group 119.svg" alt="">
+                                </div>
+                                <div class="bx__item-text">
+                                  <h6>حور احمد كامل الفضلي</h6>
+                                  <p>منع سفر</p>
+                                  <p>منع سفر</p>
+                                  <p>منع سفر</p>
+                                  <p>منع سفر</p>
+                                </div>
+                              </li>
+                              
+                            </ul>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                
+              </div>
+            
+            </div>
+          </div>
+        </div>
         
 
 
@@ -490,23 +575,6 @@
 
     <script>
 
-
-    // Create animation icon
-    bodymovin.loadAnimation({
-          container: document.getElementById('noteIcon'),
-          path: 'imges/MOJ_Tanfez_V1_Alert.json',
-          
-          loop: true,
-          autoplay: true,
-            });
-          bodymovin.loadAnimation({
-          container: document.getElementById('successIcon'),
-          path: 'imges/MOJ_Tanfez_V1_Success.json',
-          
-          loop: true,
-          autoplay: true,
-            });
-    //  animation icon
 
 
         const dateInputs = document.querySelectorAll('.date-input');
