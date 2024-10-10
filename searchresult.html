@@ -660,11 +660,14 @@
           var cFileOpendModal=document.querySelector('.btn-close-file-opend');
 
           cFileOpendModal.addEventListener('click', function () {
+       
             var firstModalInstance = bootstrap.Modal.getInstance(secondModal);
             firstModalInstance.hide();
            openFileForm.reset();
 
           });
+
+
           var openFileForm = document.getElementById('openFileForm');
           var btnOpenFileModal = document.getElementById('btnOpenFileModal');
           cFileOpendModal.addEventListener('click', function () {
