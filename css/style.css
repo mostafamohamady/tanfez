@@ -211,9 +211,6 @@ ul {
   box-shadow: 0px 7px 9px var(--input-box-shadow);
   position: relative;
 }
-.form-control::-moz-placeholder {
-  color: var(--input-placeholder-color);
-}
 .form-control::placeholder {
   color: var(--input-placeholder-color);
 }
@@ -400,9 +397,6 @@ ul {
   border: 1px solid var(--input-border);
   box-shadow: 0px 7px 9px var(--input-box-shadow);
   position: relative;
-}
-.login-page .login-form .form-control::-moz-placeholder {
-  color: var(--input-placeholder-color);
 }
 .login-page .login-form .form-control::placeholder {
   color: var(--input-placeholder-color);
@@ -779,8 +773,7 @@ ul {
 /*modal*/
 .modal--edit {
   background: rgba(63, 98, 114, 0.3843137255);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 .modal--edit.fade {
   transition: all 0.3s linear;
@@ -829,9 +822,6 @@ ul {
   position: relative;
   background-size: 20px 20px;
   background-position: 25px center;
-}
-.form-select::-moz-placeholder {
-  color: var(--input-placeholder-color);
 }
 .form-select::placeholder {
   color: var(--input-placeholder-color);
@@ -946,11 +936,6 @@ input[type=date]::-webkit-calendar-picker-indicator {
 
 .form-floating .floatingInput--amount {
   padding-right: 70px !important;
-}
-
-.form-floating > .form-control:not(:-moz-placeholder-shown) ~ label.floatingInput--amount {
-  padding-top: 8px !important;
-  padding-right: 80px !important;
 }
 
 .form-floating > .form-control:not(:placeholder-shown) ~ label.floatingInput--amount {
